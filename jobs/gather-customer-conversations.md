@@ -52,6 +52,14 @@ Define:
 
 Locate all relevant sources across drives, notes, CRM exports, and transcript stores.
 
+Supported source systems can include:
+
+- Fireflies
+- local transcript exports
+- CRM exports
+- email exports
+- support systems
+
 ### 3. Prepare
 
 Normalize the source set:
@@ -99,6 +107,7 @@ Freeze the pack for parsing and hand off to the next job.
 3. Prefer original transcripts over summaries when both exist.
 4. Preserve source provenance for every item.
 5. Mark confidence on each source.
+6. When using a source system like Fireflies, normalize source metadata before any PMM summarization.
 
 ## Artifact schema
 

@@ -7,6 +7,9 @@ Inventory and normalize the raw customer conversation set before parsing begins.
 ## Fields
 
 - `source_id`
+- `source_system`
+  fireflies, local_file, crm, email, support_tool, survey_tool, other
+- `external_source_id`
 - `source_type`
   interview, sales_call, cs_call, support_ticket, crm_note, email_thread, survey_response, other
 - `title`
@@ -16,6 +19,7 @@ Inventory and normalize the raw customer conversation set before parsing begins.
 - `persona_or_role`
 - `channel`
 - `raw_file_path_or_link`
+- `source_url`
 - `has_transcript`
 - `has_summary`
 - `language_quality`

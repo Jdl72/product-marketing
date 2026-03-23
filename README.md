@@ -8,8 +8,18 @@ This repository is the home for a product marketing agent system built around a 
   Portable markdown skills, one per core workflow artifact
 - `docs/architecture/`
   System architecture, roadmap, and GitHub work model
+- `jobs/`
+  Job specs that turn PMM work into buildable workflows
+- `connectors/`
+  Source-system integrations for evidence gathering
+- `scripts/`
+  Small utilities for fetching and preparing source material
 - `schemas/`
   Output contracts for reusable PMM artifacts
+- `examples/`
+  Calibration outputs that show what done looks like
+- `evals/`
+  Quality rubrics and evaluation artifacts
 - `.github/ISSUE_TEMPLATE/`
   GitHub issue templates for epics and implementation work
 

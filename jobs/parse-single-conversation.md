@@ -52,6 +52,7 @@ Prepare the source by:
 - cleaning obvious formatting noise
 - separating interviewer/internal notes from customer language
 - marking low-confidence sections
+- identifying whether one or multiple external stakeholders are present
 
 ### 4. Confirm
 
@@ -90,8 +91,10 @@ Save the conversation record and route it to synthesis.
    - desired outcomes
    - current alternatives
    - objections
+   - contract or legal objections when present
    - buying triggers
    - trust or evaluation criteria
+   - stakeholder-specific priorities when the source includes multiple external voices
 4. Rate evidence strength conservatively.
 5. Do not let one conversation pretend to represent the market.
 
@@ -109,6 +112,7 @@ Review for:
 - evidence vs interpretation separation
 - missing context
 - overconfident conclusions
+- flattened stakeholder differences in multi-party calls
 
 ## Evals
 
@@ -122,4 +126,5 @@ Fail if:
 
 - generic summaries replace real signal
 - internal assumptions are written as customer facts
+- distinct stakeholder needs are collapsed without noting the difference
 - the parse cannot feed downstream PMM artifacts

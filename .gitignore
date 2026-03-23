@@ -1,0 +1,3 @@
+examples/conversations/raw-fireflies-*.json
+*.pyc
+__pycache__/
