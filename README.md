@@ -57,3 +57,17 @@ The repo is organized into four layers:
 - [Conversation synthesis input pack guide](/Users/jacklindberg/Documents/Product%20Marketing/examples/conversations/conversation-synthesis-input-pack.md)
 - [Generated conversation synthesis input pack](/Users/jacklindberg/Documents/Product%20Marketing/examples/conversations/conversation-synthesis-input-pack.generated.md)
 - [Conversation synthesis example](/Users/jacklindberg/Documents/Product%20Marketing/examples/conversations/conversation-synthesis-example.md)
+
+## Testing
+
+Run the current script test suite with:
+
+```bash
+python3 -m unittest discover -s tests -p 'test_*.py' -v
+```
+
+Current coverage includes:
+
+- unit tests for parsing helpers, validation helpers, and Fireflies client behavior
+- integration tests for fetch, build, and validate scripts
+- an end-to-end test for the parsed-record to synthesis-input workflow

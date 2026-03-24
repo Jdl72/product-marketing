@@ -11,7 +11,7 @@ if str(ROOT) not in sys.path:
 from connectors.fireflies.client import FirefliesClient
 
 
-def main():
+def build_parser():
     parser = argparse.ArgumentParser(description="Fetch transcripts from Fireflies")
     parser.add_argument("--limit", type=int, default=10, help="Number of transcripts to list")
     parser.add_argument("--transcript-id", help="Fetch one transcript by ID")
@@ -19,9 +19,14 @@ def main():
         "--output",
         help="Optional output path for JSON",
     )
-    args = parser.parse_args()
+    return parser
 
-    client = FirefliesClient()
+
+def main(argv=None, client_factory=FirefliesClient):
+    parser = build_parser()
+    args = parser.parse_args(argv)
+
+    client = client_factory()
 
     if args.transcript_id:
         payload = client.get_transcript(args.transcript_id)
@@ -35,7 +40,8 @@ def main():
         output_path.write_text(text)
     else:
         print(text)
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

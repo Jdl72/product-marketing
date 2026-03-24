@@ -56,14 +56,7 @@ def validate_inline_record(section_name, entry_lines, errors):
         errors.append(f"{section_name}: missing record id citation for bullet '{bullet}'")
 
 
-def main():
-    parser = argparse.ArgumentParser(
-        description="Validate that conversation synthesis pattern sections cite supporting record ids."
-    )
-    parser.add_argument("path", help="Path to conversation synthesis markdown file")
-    args = parser.parse_args()
-
-    text = Path(args.path).read_text()
+def validate_text(text):
     sections = extract_sections(text)
     errors = []
 
@@ -81,14 +74,31 @@ def main():
                 validate_support_line(section_name, entry, errors)
             else:
                 validate_inline_record(section_name, entry, errors)
+    return errors
+
+
+def build_parser():
+    parser = argparse.ArgumentParser(
+        description="Validate that conversation synthesis pattern sections cite supporting record ids."
+    )
+    parser.add_argument("path", help="Path to conversation synthesis markdown file")
+    return parser
+
+
+def main(argv=None):
+    parser = build_parser()
+    args = parser.parse_args(argv)
+    text = Path(args.path).read_text()
+    errors = validate_text(text)
 
     if errors:
         for error in errors:
             print(f"FAIL: {error}")
-        sys.exit(1)
+        return 1
 
     print("PASS: all required synthesis pattern sections include record-level citations")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

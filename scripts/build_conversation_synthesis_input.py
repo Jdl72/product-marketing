@@ -161,7 +161,7 @@ def render_markdown_pack(records, objective, segment, persona_scope, time_window
     return "\n".join(lines) + "\n"
 
 
-def main():
+def build_parser():
     parser = argparse.ArgumentParser(
         description="Assemble parsed conversation records into a synthesis-ready input pack."
     )
@@ -177,7 +177,12 @@ def main():
         help="Output format",
     )
     parser.add_argument("--output", help="Optional output file path")
-    args = parser.parse_args()
+    return parser
+
+
+def main(argv=None):
+    parser = build_parser()
+    args = parser.parse_args(argv)
 
     records = [parse_record(path) for path in args.records]
     if args.format == "json":
@@ -205,7 +210,8 @@ def main():
         output_path.write_text(text)
     else:
         print(text)
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())
