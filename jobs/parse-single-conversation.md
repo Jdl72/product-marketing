@@ -52,8 +52,8 @@ Prepare the source by:
 - cleaning obvious formatting noise
 - separating interviewer/internal notes from customer language
 - marking low-confidence sections
-- identifying whether one or multiple external stakeholders are present
-- identifying obvious transcript term errors that should be normalized
+- identifying whether one or multiple external stakeholders are present; if multiple, list each stakeholder by name and role before parsing begins
+- identifying obvious transcript term errors that should be normalized; record each normalization in `term_normalization_notes` with the original form and the corrected form
 
 ### 4. Confirm
 
@@ -110,16 +110,16 @@ Use:
 
 ## Human review gate
 
-Review for:
+Review for each of the following. All items are active checks — not optional:
 
-- quote fidelity
-- speaker attribution on quoted language
-- transcript citation anchors on quoted language when available
-- evidence vs interpretation separation
-- missing context
-- overconfident conclusions
-- flattened stakeholder differences in multi-party calls
-- unjustified term corrections
+- **Quote fidelity:** Quoted language matches the source verbatim. No paraphrasing inside quotation marks.
+- **Speaker attribution:** Every quoted statement identifies the speaker by name when the source supports it. Unattributed quotes are only acceptable when the transcript genuinely cannot identify the speaker.
+- **Transcript citation anchors:** Every notable quote includes a sentence number or timestamp anchor when the source supports it (e.g., `[sentence 231, 14:15-14:24]`).
+- **Evidence vs interpretation separation:** Customer language is preserved in dedicated fields (e.g., `notable_quotes`, `language_to_use`). Interpretations go in summary and evidence fields. The two are not mixed.
+- **Stakeholder mapping:** If multiple external stakeholders were present, the record includes a `stakeholder_map` that names each stakeholder and their role. Distinct priorities are preserved in the relevant evidence fields rather than flattened.
+- **Term normalization:** Every transcript term that was corrected or normalized is recorded in `term_normalization_notes` with the original form and the corrected form. Normalization is conservative — only clear and well-supported corrections are applied.
+- **Overconfident conclusions:** Confidence ratings and evidence strength reflect the actual source quality, not wishful thinking.
+- **Missing context:** Known gaps and open questions are recorded so downstream synthesis does not treat the record as complete.
 
 ## Evals
 
