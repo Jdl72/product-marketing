@@ -32,6 +32,9 @@ Represent one parsed conversation as structured PMM evidence.
 - `language_to_use`
 - `language_to_avoid`
 - `notable_quotes`
+  Preserve speaker attribution when available. Format as `Speaker Name: "quote"`.
+- `term_normalization_notes`
+  Capture transcript term corrections or domain-specific normalization, for example `Packview` -> `Pacvue`.
 - `summary_of_signal`
 
 ## Quality fields

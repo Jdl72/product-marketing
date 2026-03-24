@@ -51,4 +51,6 @@ The repo is organized into four layers:
 - [System architecture](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/pmm-agent-system.md)
 - [Roadmap](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/pmm-agent-roadmap.md)
 - [Discovery system flow](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/discovery-system-flow.md)
+- [Parse single conversation runbook](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/parse-single-conversation-runbook.md)
+- [Discovery term dictionary](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/discovery-term-dictionary.md)
 - [GitHub work model](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/github-work-model.md)

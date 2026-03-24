@@ -53,6 +53,7 @@ Prepare the source by:
 - separating interviewer/internal notes from customer language
 - marking low-confidence sections
 - identifying whether one or multiple external stakeholders are present
+- identifying obvious transcript term errors that should be normalized
 
 ### 4. Confirm
 
@@ -86,6 +87,8 @@ Save the conversation record and route it to synthesis.
 
 1. Preserve the source type and context.
 2. Separate exact language from inferred meaning.
+3. Attribute quotes to speakers whenever the source supports it.
+4. Normalize domain-specific terms conservatively and record each normalization.
 3. Capture:
    - pains
    - desired outcomes
@@ -95,8 +98,8 @@ Save the conversation record and route it to synthesis.
    - buying triggers
    - trust or evaluation criteria
    - stakeholder-specific priorities when the source includes multiple external voices
-4. Rate evidence strength conservatively.
-5. Do not let one conversation pretend to represent the market.
+5. Rate evidence strength conservatively.
+6. Do not let one conversation pretend to represent the market.
 
 ## Artifact schema
 
@@ -109,10 +112,12 @@ Use:
 Review for:
 
 - quote fidelity
+- speaker attribution on quoted language
 - evidence vs interpretation separation
 - missing context
 - overconfident conclusions
 - flattened stakeholder differences in multi-party calls
+- unjustified term corrections
 
 ## Evals
 
@@ -127,4 +132,5 @@ Fail if:
 - generic summaries replace real signal
 - internal assumptions are written as customer facts
 - distinct stakeholder needs are collapsed without noting the difference
+- quoted language loses speaker attribution when the transcript supports it
 - the parse cannot feed downstream PMM artifacts

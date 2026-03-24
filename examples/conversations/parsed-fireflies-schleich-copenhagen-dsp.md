@@ -112,13 +112,18 @@ It was chosen because it contains richer discovery signal than a pure pricing ca
 
 ### `notable_quotes`
 
-- "a DSP partnership is, like, would be the right way for us to, as a company, 100%."
-- "we'll be building our own tech out for amc."
-- "that's really not what we want. Like, we want, like, a full AMC strategy."
-- "how quickly can we, you know, get those kickstarted?"
-- "they're super limited when it Comes to EMC and just like more advanced stuff."
-- "the missing piece is basically how do you do audience at a scale?"
-- "we're all ready for that also, because I think the next thing coming up is obviously Prime Day in June."
+- `Silas Moestrup Pedersen`: "a DSP partnership is, like, would be the right way for us to, as a company, 100%."
+- `Silas Moestrup Pedersen`: "we'll be building our own tech out for amc."
+- `Silas Moestrup Pedersen`: "that's really not what we want. Like, we want, like, a full AMC strategy."
+- `Larysa Gruner`: "how quickly can we, you know, get those kickstarted?"
+- `Silas Moestrup Pedersen`: "they're super limited when it Comes to EMC and just like more advanced stuff."
+- `Silas Moestrup Pedersen`: "the missing piece is basically how do you do audience at a scale?"
+- `Silas Moestrup Pedersen`: "we're all ready for that also, because I think the next thing coming up is obviously Prime Day in June."
+
+### `term_normalization_notes`
+
+- `EMC` normalized to `AMC` in interpretation fields based on surrounding transcript context.
+- `amc` normalized to `AMC` and `dsp` normalized to `DSP` in interpretation fields, while quotes preserve original phrasing.
 
 ### `summary_of_signal`
 

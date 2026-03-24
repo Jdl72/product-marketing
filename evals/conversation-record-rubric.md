@@ -29,6 +29,22 @@ Low score:
 
 - the output sounds smooth but loses the customer voice
 
+### 1b. Quote attribution
+
+Question:
+
+When the source supports it, are the most important quotes attributed to the right speaker?
+
+High score:
+
+- notable quotes include speaker names
+- multi-speaker calls preserve who said what
+
+Low score:
+
+- quotes are unattributed even though the transcript clearly identifies speakers
+- the output makes it harder to tell whether a statement came from the buyer, seller, agency, or another stakeholder
+
 ### 2. Evidence vs interpretation separation
 
 Question:
@@ -87,6 +103,23 @@ Low score:
 
 - the record sounds more certain than the evidence justifies
 
+### 5b. Term normalization
+
+Question:
+
+Are transcript corrections and domain-term normalizations accurate, minimal, and explicit?
+
+High score:
+
+- obvious transcript mistakes are corrected
+- corrections are documented in `term_normalization_notes`
+- normalization improves clarity without rewriting meaning
+
+Low score:
+
+- transcript errors are copied forward when the intended term is obvious
+- corrections are made silently or speculatively
+
 ### 6. Downstream usefulness
 
 Question:
@@ -130,6 +163,7 @@ Fail if:
 - key customer language is erased
 - confidence is clearly overstated
 - multi-party source nuance is erased
+- speaker attribution is dropped without reason
 - the output cannot support downstream PMM work
 
 ## Review notes to capture every time

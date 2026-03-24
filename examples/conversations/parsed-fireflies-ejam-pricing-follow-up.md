@@ -109,13 +109,18 @@ It was chosen because it is rich in objections and evaluation criteria, which ma
 
 ### `notable_quotes`
 
-- "I would like to use the amc."
-- "I'm not paying anything with Pack roo."
-- "the most important is like a managed service."
-- "their support is great as well."
-- "if it's too easy and if it's external is managing why are you guys charging like very, very premium?"
-- "if we can get everything I need on Monday, I can sign a contract on Monday."
-- "I would like to put it on contract as a like a tier."
+- `Sam Sutcu`: "I would like to use the amc."
+- `Sam Sutcu`: "I'm not paying anything with Pack roo."
+- `Sam Sutcu`: "the most important is like a managed service."
+- `Sam Sutcu`: "their support is great as well."
+- `Sam Sutcu`: "if it's too easy and if it's external is managing why are you guys charging like very, very premium?"
+- `Sam Sutcu`: "if we can get everything I need on Monday, I can sign a contract on Monday."
+- `Sam Sutcu`: "I would like to put it on contract as a like a tier."
+
+### `term_normalization_notes`
+
+- `Pack roo` normalized to `Pacvue` based on context and category fit.
+- `amc` normalized to `AMC` in interpretation fields, while quotes preserve original casing.
 
 ### `summary_of_signal`
 

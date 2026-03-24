@@ -41,6 +41,7 @@ Capture:
 - role
 - conversation context
 - stakeholder map if more than one external voice is present
+- obvious transcript term corrections that should be normalized
 
 If the source is partial or messy, note that before parsing.
 
@@ -70,6 +71,11 @@ If the source is multi-party:
 
 - preserve role-specific priorities
 - note where external stakeholders disagree or emphasize different outcomes
+
+If the transcript has speaker labels:
+
+- preserve speaker attribution on the most important quotes
+- do not strip attribution unless the transcript itself is unreliable
 
 ### Step 4: Save an example
 
@@ -105,6 +111,8 @@ Recent schema gaps exposed by real calls:
 
 - `contract_or_legal_objections`
 - `stakeholder_map`
+- `term_normalization_notes`
+- attributed `notable_quotes`
 
 ## Definition of done
 
