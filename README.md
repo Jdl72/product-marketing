@@ -54,4 +54,6 @@ The repo is organized into four layers:
 - [Parse single conversation runbook](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/parse-single-conversation-runbook.md)
 - [Discovery term dictionary](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/discovery-term-dictionary.md)
 - [GitHub work model](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/github-work-model.md)
+- [Conversation synthesis input pack guide](/Users/jacklindberg/Documents/Product%20Marketing/examples/conversations/conversation-synthesis-input-pack.md)
+- [Generated conversation synthesis input pack](/Users/jacklindberg/Documents/Product%20Marketing/examples/conversations/conversation-synthesis-input-pack.generated.md)
 - [Conversation synthesis example](/Users/jacklindberg/Documents/Product%20Marketing/examples/conversations/conversation-synthesis-example.md)

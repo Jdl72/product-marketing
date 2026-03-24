@@ -25,3 +25,8 @@ Start with:
 - `conversation-record-rubric.md`
 
 That is the eval for the `parse-single-conversation` job.
+
+## Current automated checks
+
+- `python3 scripts/validate_conversation_synthesis.py examples/conversations/conversation-synthesis-example.md`
+  Confirms that key synthesis pattern sections cite supporting record ids.
