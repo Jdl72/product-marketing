@@ -26,12 +26,17 @@ Aggregate multiple conversation records into segment-level PMM evidence.
 - `language_to_use`
 - `language_to_avoid`
 - `representative_quotes`
+  Preserve speaker attribution and record-level citations. Preferred format:
+  `Speaker Name [record convrec-..., sentence 123, 14:15-14:24]: "quote"`.
 
 ## Analysis fields
 
 - `strongly_supported_patterns`
+  Each pattern should cite the supporting records.
 - `emerging_patterns`
+  Each pattern should cite the supporting records and indicate limited support.
 - `contradictory_signals`
+  Each contradiction should name the records or stakeholders in tension.
 - `strategic_implications`
 - `recommended_downstream_artifacts`
 
@@ -45,3 +50,4 @@ Aggregate multiple conversation records into segment-level PMM evidence.
 
 - Preserve contradictions when they are real.
 - Mark where evidence is strong enough to guide strategy versus only suggestive.
+- Do not make synthesis claims without record-level support.

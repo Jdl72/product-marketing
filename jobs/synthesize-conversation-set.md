@@ -81,12 +81,13 @@ Save the synthesis and hand it to persona, positioning, GTM, or sales jobs.
 
 1. Cluster by recurring problem and outcome patterns.
 2. Keep direct language visible.
-3. Separate:
+3. Carry forward record-level citations and representative quotes for every important pattern.
+4. Separate:
    - strongly supported patterns
    - emerging patterns
    - unresolved contradictions
-4. Flag where evidence is too thin to generalize.
-5. Produce outputs a PMM can reuse immediately.
+5. Flag where evidence is too thin to generalize.
+6. Produce outputs a PMM can reuse immediately.
 
 ## Artifact schema
 
@@ -101,6 +102,7 @@ Check:
 - whether segment boundaries are still clean
 - whether the synthesis overstates the evidence
 - whether the resulting output is usable for personas and positioning
+- whether major claims can be traced back to specific records
 
 ## Evals
 
@@ -114,4 +116,5 @@ Fail if:
 
 - the synthesis sounds insightful but is not grounded
 - quotes are missing
+- patterns are not traceable to underlying records
 - segment-specific differences disappear

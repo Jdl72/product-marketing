@@ -10,6 +10,8 @@ This folder is for the first manual examples of the discovery workflow.
    The structured parse of that source
 3. `review-notes`
    What was weak, over-interpreted, or missing
+4. `conversation-synthesis`
+   A grounded synthesis across multiple parsed records with record-level citations
 
 ## Rules
 
