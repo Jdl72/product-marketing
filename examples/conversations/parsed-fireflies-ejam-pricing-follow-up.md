@@ -109,13 +109,13 @@ It was chosen because it is rich in objections and evaluation criteria, which ma
 
 ### `notable_quotes`
 
-- `Sam Sutcu`: "I would like to use the amc."
-- `Sam Sutcu`: "I'm not paying anything with Pack roo."
-- `Sam Sutcu`: "the most important is like a managed service."
-- `Sam Sutcu`: "their support is great as well."
-- `Sam Sutcu`: "if it's too easy and if it's external is managing why are you guys charging like very, very premium?"
-- `Sam Sutcu`: "if we can get everything I need on Monday, I can sign a contract on Monday."
-- `Sam Sutcu`: "I would like to put it on contract as a like a tier."
+- `Sam Sutcu [sentence 34, 02:39-02:42]`: "I would like to use the amc."
+- `Sam Sutcu [sentence 37, 02:55-02:57]`: "not paying anything with Pack roo."
+- `Sam Sutcu [sentence 130, 07:33-07:35]`: "And the most important is like a managed service."
+- `Sam Sutcu [sentence 134, 07:58-08:03]`: "Like for example, my friend told me that like their support is great as well."
+- `Sam Sutcu [sentence 231, 14:15-14:24]`: "Sounds like if it's too easy and if it's external is managing why are you guys charging like very, very premium?"
+- `Sam Sutcu [sentence 444, 30:31-30:39]`: "So if you can, if we can get everything I need on Monday, I can sign a contract on Monday."
+- `Sam Sutcu [sentence 359, 25:41-25:46]`: "I just want to put it on contract as a like a tier if I exist on like some spending."
 
 ### `term_normalization_notes`
 

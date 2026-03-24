@@ -88,8 +88,9 @@ Save the conversation record and route it to synthesis.
 1. Preserve the source type and context.
 2. Separate exact language from inferred meaning.
 3. Attribute quotes to speakers whenever the source supports it.
-4. Normalize domain-specific terms conservatively and record each normalization.
-3. Capture:
+4. Include sentence-level or timestamp-level citation anchors on notable quotes whenever the source supports it.
+5. Normalize domain-specific terms conservatively and record each normalization.
+6. Capture:
    - pains
    - desired outcomes
    - current alternatives
@@ -98,8 +99,8 @@ Save the conversation record and route it to synthesis.
    - buying triggers
    - trust or evaluation criteria
    - stakeholder-specific priorities when the source includes multiple external voices
-5. Rate evidence strength conservatively.
-6. Do not let one conversation pretend to represent the market.
+7. Rate evidence strength conservatively.
+8. Do not let one conversation pretend to represent the market.
 
 ## Artifact schema
 
@@ -113,6 +114,7 @@ Review for:
 
 - quote fidelity
 - speaker attribution on quoted language
+- transcript citation anchors on quoted language when available
 - evidence vs interpretation separation
 - missing context
 - overconfident conclusions

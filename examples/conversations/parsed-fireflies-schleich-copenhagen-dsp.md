@@ -112,13 +112,13 @@ It was chosen because it contains richer discovery signal than a pure pricing ca
 
 ### `notable_quotes`
 
-- `Silas Moestrup Pedersen`: "a DSP partnership is, like, would be the right way for us to, as a company, 100%."
-- `Silas Moestrup Pedersen`: "we'll be building our own tech out for amc."
-- `Silas Moestrup Pedersen`: "that's really not what we want. Like, we want, like, a full AMC strategy."
-- `Larysa Gruner`: "how quickly can we, you know, get those kickstarted?"
-- `Silas Moestrup Pedersen`: "they're super limited when it Comes to EMC and just like more advanced stuff."
-- `Silas Moestrup Pedersen`: "the missing piece is basically how do you do audience at a scale?"
-- `Silas Moestrup Pedersen`: "we're all ready for that also, because I think the next thing coming up is obviously Prime Day in June."
+- `Silas Moestrup Pedersen [sentence 33, 01:34-01:40]`: "So I think, like, a DSP partnership is, like, would be the right way for us to, as a company, 100%."
+- `Silas Moestrup Pedersen [sentence 45, 02:05-02:18]`: "We'll be building our own tech out for amc, but obviously also just curious, like, I mean, if we had had more time, then I would have just jumped on a call to also just talk about if that is even something that we need to build."
+- `Silas Moestrup Pedersen [sentences 80-82, 04:53-04:57]`: "And I was like, that's really not what we want. Like, we want, like, a full. Like, full AMC strategy."
+- `Larysa Gruner [sentence 109, 06:30-06:38]`: "So I think that's probably the most important thing right now is how quickly can we, you know, get those kickstarted?"
+- `Silas Moestrup Pedersen [sentence 189, 12:57-13:03]`: "But they're super limited when it Comes to EMC and just like more advanced stuff."
+- `Silas Moestrup Pedersen [sentence 416, 30:11-30:15]`: "The missing piece is basically how do you do audience at a scale?"
+- `Silas Moestrup Pedersen [sentence 515, 35:54-36:05]`: "And we are all ready for that also, because I think the next thing coming up is obviously Prime Day in June, and I think there we need to be ready, like, fully."
 
 ### `term_normalization_notes`
 

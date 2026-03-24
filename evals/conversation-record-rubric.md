@@ -45,6 +45,22 @@ Low score:
 - quotes are unattributed even though the transcript clearly identifies speakers
 - the output makes it harder to tell whether a statement came from the buyer, seller, agency, or another stakeholder
 
+### 1c. Quote citation fidelity
+
+Question:
+
+When the source supports it, do notable quotes include usable transcript anchors such as sentence index or timestamp?
+
+High score:
+
+- notable quotes include sentence index, timestamp, or equivalent traceable anchors
+- a reviewer could find the quote quickly in the raw source
+
+Low score:
+
+- quotes are present but hard to trace back to the transcript
+- the artifact forces manual hunting through a long call
+
 ### 2. Evidence vs interpretation separation
 
 Question:
@@ -164,6 +180,7 @@ Fail if:
 - confidence is clearly overstated
 - multi-party source nuance is erased
 - speaker attribution is dropped without reason
+- quote citations are omitted even though the transcript provides them
 - the output cannot support downstream PMM work
 
 ## Review notes to capture every time

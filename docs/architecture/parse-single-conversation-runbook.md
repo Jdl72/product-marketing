@@ -76,6 +76,7 @@ If the transcript has speaker labels:
 
 - preserve speaker attribution on the most important quotes
 - do not strip attribution unless the transcript itself is unreliable
+- include sentence index or timestamp anchors so a reviewer can find the quote quickly
 
 ### Step 4: Save an example
 
@@ -113,6 +114,7 @@ Recent schema gaps exposed by real calls:
 - `stakeholder_map`
 - `term_normalization_notes`
 - attributed `notable_quotes`
+- sentence-level quote citations
 
 ## Definition of done
 

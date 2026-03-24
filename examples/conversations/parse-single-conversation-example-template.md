@@ -36,6 +36,7 @@ Suggested sections:
 - `language_to_use`
 - `language_to_avoid`
 - `notable_quotes`
+  Include speaker attribution and source anchors when available.
 - `term_normalization_notes`
 - `summary_of_signal`
 - `evidence_strength`
