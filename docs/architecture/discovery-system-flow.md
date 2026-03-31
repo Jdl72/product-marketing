@@ -225,4 +225,6 @@ This roadmap artifact connects to:
 
 - [First Workstream: Customer Conversations](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/first-workstream-customer-conversations.md)
 - [PMM Agent System](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/pmm-agent-system.md)
+- [Client Workspace Contract](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/client-workspace-contract.md)
+- [Config-Aware Customer Conversation Runbook](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/config-aware-customer-conversation-runbook.md)
 - [Jobs README](/Users/jacklindberg/Documents/Product%20Marketing/jobs/README.md)
