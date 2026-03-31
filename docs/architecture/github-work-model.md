@@ -36,6 +36,16 @@
 - `M4 Strategy Orchestrator`
 - `M5 Asset and Campaign Operations`
 
+## Recommended multi-client epics
+
+Add these cross-cutting epics when the system moves from a single workspace to reusable consulting use:
+
+- `Epic: Core PMM System Hardening`
+- `Epic: Client Configuration Framework`
+- `Epic: Cross-Functional Operating Rhythm`
+
+Treat client-specific implementations such as [client] as consumer backlogs rather than permanent core epics.
+
 ## Epic issue structure
 
 Each epic issue should contain:
