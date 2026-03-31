@@ -131,6 +131,32 @@ Recommended home:
 
 - `evals/`
 
+## Core vs client workspace model
+
+The Product Marketing repo is the reusable PMM system of method.
+
+Client-specific work should live in separate client workspaces that consume the repo workflows, schemas, and evals.
+
+Core owns:
+
+- reusable method
+- reusable artifact contracts
+- reusable retrieval and validation helpers
+- reusable quality bar
+
+Client workspaces own:
+
+- client taxonomy
+- source inventories
+- coded records and syntheses
+- client-facing briefs
+- decision and action logs
+
+See:
+
+- [Core vs Client Workspaces](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/core-vs-client-workspaces.md)
+- [Client Workspace Contract](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/client-workspace-contract.md)
+
 ## Target system architecture
 
 ### A. Evidence ingestion

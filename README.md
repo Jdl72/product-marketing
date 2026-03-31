@@ -51,6 +51,10 @@ The repo is organized into four layers:
 - [System architecture](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/pmm-agent-system.md)
 - [Roadmap](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/pmm-agent-roadmap.md)
 - [Discovery system flow](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/discovery-system-flow.md)
+- [Core vs client workspaces](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/core-vs-client-workspaces.md)
+- [Client workspace contract](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/client-workspace-contract.md)
+- [Config-aware conversation runbook](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/config-aware-customer-conversation-runbook.md)
+- [Multi-client backlog](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/multi-client-backlog.md)
 - [Parse single conversation runbook](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/parse-single-conversation-runbook.md)
 - [Discovery term dictionary](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/discovery-term-dictionary.md)
 - [Fireflies native skill mapping](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/fireflies-native-skill-mapping.md)
@@ -58,6 +62,7 @@ The repo is organized into four layers:
 - [Conversation synthesis input pack guide](/Users/jacklindberg/Documents/Product%20Marketing/examples/conversations/conversation-synthesis-input-pack.md)
 - [Generated conversation synthesis input pack](/Users/jacklindberg/Documents/Product%20Marketing/examples/conversations/conversation-synthesis-input-pack.generated.md)
 - [Conversation synthesis example](/Users/jacklindberg/Documents/Product%20Marketing/examples/conversations/conversation-synthesis-example.md)
+- [Example client workspace](/Users/jacklindberg/Documents/Product%20Marketing/examples/client-workspace/README.md)
 
 ## Testing
 
