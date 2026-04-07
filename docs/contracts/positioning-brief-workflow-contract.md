@@ -7,7 +7,7 @@ Define the minimum contract for producing a reusable positioning brief from grou
 ## Output artifact
 
 - `positioning-brief`
-- schema: [positioning-brief.md](/tmp/product-marketing-contracts/schemas/positioning-brief.md)
+- schema: [positioning-brief.md](../../schemas/positioning-brief.md)
 
 ## Required inputs
 

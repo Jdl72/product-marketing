@@ -39,8 +39,11 @@ class OutputRubricsTests(unittest.TestCase):
 
     def test_roadmap_marks_evaluation_coverage_as_current_task(self):
         text = (REPO_ROOT / "docs" / "architecture" / "pmm-agent-roadmap.md").read_text(encoding="utf-8")
-        self.assertIn("Current next task:", text)
-        self.assertIn("Add evaluation criteria for each major output type", text)
+        marker = "Current next task:"
+        self.assertIn(marker, text)
+        after_marker = text.split(marker, 1)[1]
+        next_section = after_marker.split("After that:", 1)[0]
+        self.assertIn("Add evaluation criteria for each major output type", next_section)
 
 
 if __name__ == "__main__":
