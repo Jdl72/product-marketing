@@ -24,8 +24,14 @@ Start with:
 
 - `conversation-record-rubric.md`
 - `client-workspace-rubric.md`
+- `conversation-synthesis-rubric.md`
+- `positioning-brief-rubric.md`
+- `persona-pack-rubric.md`
+- `gtm-plan-rubric.md`
+- `battle-card-rubric.md`
+- `content-calendar-rubric.md`
 
-That is the eval for the `parse-single-conversation` job.
+These give the repo a baseline evaluation layer across the current schema-backed conversation, strategy, enablement, and campaign artifacts.
 
 ## Current automated checks
 
