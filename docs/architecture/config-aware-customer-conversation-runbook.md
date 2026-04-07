@@ -70,6 +70,8 @@ Client config may add interpretation guidance for:
 
 If a client-specific taxonomy item is missing, keep the generic schema field and mark the client-specific interpretation as unresolved.
 
+If the client config pack has not passed validation, continue only with the generic schema fields and the documented fallback behavior for the missing config area.
+
 ### 4. Synthesize the set
 
 Use the core `Synthesize Conversation Set` job.
@@ -136,3 +138,17 @@ The workflow is working correctly when:
 - records remain comparable across clients
 - syntheses answer client questions while preserving traceability
 - downstream briefs can cite real quotes and source records directly
+
+## Validation guidance
+
+Before running a client-scoped workflow, validate the workspace config pack:
+
+```bash
+python3 scripts/validate_client_config.py <workspace-root>
+```
+
+Use the validator result to decide whether the run should proceed as:
+
+- a fully client-scoped workflow
+- a conditional workflow that preserves unresolved fields explicitly
+- a stop-and-fix config handoff when required structure is missing

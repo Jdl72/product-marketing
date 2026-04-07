@@ -22,9 +22,12 @@ Use it as a starting point for a new consulting client.
 2. Rename it for the client.
 3. Fill in the config pack before coding or synthesizing new calls.
 4. Use the core repo jobs and schemas to populate records and syntheses.
-5. Run the client-workspace evaluation artifact to confirm the workspace still satisfies the reusable contract.
+5. Run the client-workspace evaluation artifact when you want a broader workspace-level readiness check.
+6. Run the config validation artifact when you want to verify the config pack and fallback behavior specifically.
 
 ## Related artifacts
 
 - [Client workspace evaluation example](client-workspace-evaluation-example.md)
 - [Client workspace rubric](../../evals/client-workspace-rubric.md)
+- `client-config-validation-example.md`
+  Shows the expected validation output for the generic template workspace.
