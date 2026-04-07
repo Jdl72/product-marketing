@@ -1,5 +1,16 @@
 # PMM Agent Roadmap
 
+## Current status
+
+The repo has already completed the early setup work that this roadmap originally described:
+
+- reusable schemas exist for the current core artifact set
+- the conversation workflow has an end-to-end example and automated tests
+- GitHub epic and child-issue structure is in place
+- multi-client hardening docs and example workspace scaffolding now exist
+
+That means the roadmap should no longer treat issue setup and first examples as the immediate next work. The next practical gap is widening evaluation coverage across the major schema-backed outputs so the repo has a more complete quality layer.
+
 ## Milestones
 
 ### M1. Method OS
@@ -139,8 +150,19 @@ Child work:
 
 ## Recommended next implementation sequence
 
+Completed foundations:
+
 1. Create schemas for the most reusable artifacts
 2. Add examples for one end-to-end PMM workflow
 3. Open GitHub epic issues
 4. Open child issues under each epic
+
+Current next task:
+
 5. Add evaluation criteria for each major output type
+
+After that:
+
+6. Expand workflow input/output contracts across the schema-backed artifacts
+7. Add config validation and fallback behavior for client workspaces
+8. Extend evidence-layer retrieval beyond the current conversation workflow
