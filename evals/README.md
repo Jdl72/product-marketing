@@ -23,6 +23,7 @@ Did the workflow follow the intended process?
 Start with:
 
 - `conversation-record-rubric.md`
+- `client-workspace-rubric.md`
 
 That is the eval for the `parse-single-conversation` job.
 
@@ -30,3 +31,5 @@ That is the eval for the `parse-single-conversation` job.
 
 - `python3 scripts/validate_conversation_synthesis.py examples/conversations/conversation-synthesis-example.md`
   Confirms that key synthesis pattern sections cite supporting record ids.
+- `python3 scripts/evaluate_client_workspace.py examples/client-workspace/generic-example`
+  Generates a reusable evaluation artifact from the client workspace contract.
