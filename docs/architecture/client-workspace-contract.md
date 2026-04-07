@@ -129,3 +129,4 @@ A valid client workspace:
 
 - [Core vs Client Workspaces](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/core-vs-client-workspaces.md)
 - [Config-Aware Customer Conversation Runbook](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/config-aware-customer-conversation-runbook.md)
+- [Client Workspace Rubric](../../evals/client-workspace-rubric.md)
