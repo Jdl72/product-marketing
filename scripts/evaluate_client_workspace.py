@@ -19,13 +19,27 @@ REQUIRED_DECISION_FILES = (
     "cross-functional-action-log.md",
 )
 REPO_ROOT = Path(__file__).resolve().parents[1]
+WORKSPACE_KIND_MARKER = ".workspace-kind"
+MARKDOWN_CONTENT_EXTENSIONS = {".md"}
 
 
-def detect_workspace_kind(root: Path) -> str:
-    parts = root.parts
-    if "examples" in parts and "client-workspace" in parts:
-        return "template"
-    return "client"
+def detect_workspace_kind(root: Path, explicit_kind: str | None = None) -> str:
+    if explicit_kind:
+        return explicit_kind
+
+    marker_path = root / WORKSPACE_KIND_MARKER
+    if marker_path.is_file():
+        marker_value = marker_path.read_text(encoding="utf-8").strip().lower()
+        if marker_value in {"template", "client"}:
+            return marker_value
+        raise ValueError(
+            f"{_readable_path(marker_path)} must contain either 'template' or 'client'"
+        )
+
+    raise ValueError(
+        f"Could not determine workspace kind for {_readable_path(root)}. "
+        f"Add a {WORKSPACE_KIND_MARKER} marker file or pass --workspace-kind."
+    )
 
 
 def _readable_path(path: Path) -> str:
@@ -45,13 +59,15 @@ def _list_substantive_files(directory: Path) -> list[str]:
     return sorted(
         path.name
         for path in directory.iterdir()
-        if path.is_file() and path.name != "README.md"
+        if path.is_file()
+        and path.name != "README.md"
+        and path.suffix.lower() in MARKDOWN_CONTENT_EXTENSIONS
     )
 
 
-def collect_workspace_facts(root: Path) -> dict:
+def collect_workspace_facts(root: Path, *, workspace_kind: str | None = None) -> dict:
     root = root.resolve()
-    kind = detect_workspace_kind(root)
+    kind = detect_workspace_kind(root, explicit_kind=workspace_kind)
 
     dir_presence = {name: (root / name).is_dir() for name in REQUIRED_DIRS}
 
@@ -141,7 +157,7 @@ def evaluate_workspace(facts: dict) -> dict:
 
     evidence_status = "FAIL"
     if facts["workspace_kind"] == "template":
-        evidence_status = "PASS" if facts["has_evidence_readme"] else "FAIL"
+        evidence_status = "PASS" if facts["has_evidence_readme"] or facts["has_source_inventory"] else "FAIL"
     else:
         if facts["has_source_inventory"]:
             evidence_status = "PASS"
@@ -295,6 +311,11 @@ def build_parser():
         description="Evaluate a client workspace against the reusable Product Marketing workspace contract."
     )
     parser.add_argument("workspace", help="Path to the client workspace root")
+    parser.add_argument(
+        "--workspace-kind",
+        choices=("template", "client"),
+        help="Override workspace kind detection when a marker file is not present.",
+    )
     parser.add_argument("--output", help="Optional markdown output path")
     return parser
 
@@ -304,7 +325,7 @@ def main(argv=None):
     args = parser.parse_args(argv)
 
     workspace_root = Path(args.workspace)
-    facts = collect_workspace_facts(workspace_root)
+    facts = collect_workspace_facts(workspace_root, workspace_kind=args.workspace_kind)
     evaluation = evaluate_workspace(facts)
     text = render_markdown(evaluation)
 

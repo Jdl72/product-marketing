@@ -26,5 +26,5 @@ Use it as a starting point for a new consulting client.
 
 ## Related artifacts
 
-- [Client workspace evaluation example](/Users/jacklindberg/Documents/Product%20Marketing/examples/client-workspace/client-workspace-evaluation-example.md)
-- [Client workspace rubric](/Users/jacklindberg/Documents/Product%20Marketing/evals/client-workspace-rubric.md)
+- [Client workspace evaluation example](client-workspace-evaluation-example.md)
+- [Client workspace rubric](../../evals/client-workspace-rubric.md)

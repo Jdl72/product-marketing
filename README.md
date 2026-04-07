@@ -63,7 +63,7 @@ The repo is organized into four layers:
 - [Generated conversation synthesis input pack](/Users/jacklindberg/Documents/Product%20Marketing/examples/conversations/conversation-synthesis-input-pack.generated.md)
 - [Conversation synthesis example](/Users/jacklindberg/Documents/Product%20Marketing/examples/conversations/conversation-synthesis-example.md)
 - [Example client workspace](/Users/jacklindberg/Documents/Product%20Marketing/examples/client-workspace/README.md)
-- [Client workspace evaluation example](/Users/jacklindberg/Documents/Product%20Marketing/examples/client-workspace/client-workspace-evaluation-example.md)
+- [Client workspace evaluation example](examples/client-workspace/client-workspace-evaluation-example.md)
 
 ## Testing
 

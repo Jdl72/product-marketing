@@ -28,8 +28,18 @@ class ClientWorkspaceEvaluationIntegrationTests(unittest.TestCase):
 
     def test_main_writes_xnurta_evaluation_with_source_inventory_signal(self):
         with tempfile.TemporaryDirectory() as tmpdir:
-            output = Path(tmpdir) / "xnurta-eval.md"
-            exit_code = evaluator.main([str(self.xnurta_workspace), "--output", str(output)])
+            workspace = Path(tmpdir) / "client-with-inventory"
+            for dirname in evaluator.REQUIRED_DIRS:
+                (workspace / dirname).mkdir(parents=True, exist_ok=True)
+            (workspace / ".workspace-kind").write_text("client\n", encoding="utf-8")
+            for name in evaluator.REQUIRED_CONFIG_FILES:
+                (workspace / "config" / name).write_text("content\n", encoding="utf-8")
+            for name in evaluator.REQUIRED_DECISION_FILES:
+                (workspace / "decisions" / name).write_text("content\n", encoding="utf-8")
+            (workspace / "evidence" / "source-inventory.md").write_text("inventory\n", encoding="utf-8")
+
+            output = Path(tmpdir) / "client-eval.md"
+            exit_code = evaluator.main([str(workspace), "--output", str(output)])
             self.assertEqual(exit_code, 0)
             text = output.read_text(encoding="utf-8")
             self.assertIn("`workspace_kind`: `client`", text)
