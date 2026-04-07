@@ -23,6 +23,7 @@ Did the workflow follow the intended process?
 Start with:
 
 - `conversation-record-rubric.md`
+- `client-workspace-rubric.md`
 - `conversation-synthesis-rubric.md`
 - `positioning-brief-rubric.md`
 - `persona-pack-rubric.md`
@@ -36,3 +37,5 @@ These give the repo a baseline evaluation layer across the current schema-backed
 
 - `python3 scripts/validate_conversation_synthesis.py examples/conversations/conversation-synthesis-example.md`
   Confirms that key synthesis pattern sections cite supporting record ids.
+- `python3 scripts/evaluate_client_workspace.py examples/client-workspace/generic-example`
+  Generates a reusable evaluation artifact from the client workspace contract.
