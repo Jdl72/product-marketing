@@ -7,7 +7,7 @@ Define the minimum contract for producing a battle card that helps sellers compe
 ## Output artifact
 
 - `battle-card`
-- schema: [battle-card.md](/tmp/product-marketing-contracts/schemas/battle-card.md)
+- schema: [battle-card.md](../../schemas/battle-card.md)
 
 ## Required inputs
 

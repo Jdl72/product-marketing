@@ -7,7 +7,7 @@ Define the minimum contract for turning positioning and buyer evidence into an e
 ## Output artifact
 
 - `gtm-plan`
-- schema: [gtm-plan.md](/tmp/product-marketing-contracts/schemas/gtm-plan.md)
+- schema: [gtm-plan.md](../../schemas/gtm-plan.md)
 
 ## Required inputs
 
