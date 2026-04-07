@@ -152,6 +152,14 @@ def _has_real_marker_content(text: str, markers: list[str]) -> bool:
     return False
 
 
+def _has_nonempty_bullet_content(text: str) -> bool:
+    for line in text.splitlines():
+        stripped = line.strip()
+        if stripped.startswith("- ") and stripped[2:].strip():
+            return True
+    return False
+
+
 def analyze_config_file(path: Path, *, workspace_kind: str) -> dict:
     rule = FILE_RULES[path.name]
     text = path.read_text(encoding="utf-8")
@@ -164,7 +172,10 @@ def analyze_config_file(path: Path, *, workspace_kind: str) -> dict:
             missing_sections.append(section)
 
     placeholder_count = _count_placeholder_lines(text)
-    has_real_content = _has_real_marker_content(text, rule["content_markers"])
+    if path.name == "strategic-questions.md":
+        has_real_content = _has_nonempty_bullet_content(text)
+    else:
+        has_real_content = _has_real_marker_content(text, rule["content_markers"])
 
     if missing_sections:
         status = "FAIL"
@@ -233,6 +244,10 @@ def analyze_workspace(root: Path) -> dict:
 
 
 def render_markdown(report: dict) -> str:
+    missing_file_lines = ["- none"]
+    if report["missing_files"]:
+        missing_file_lines = [f"- `{name}`" for name in report["missing_files"]]
+
     lines = [
         "# Client Config Validation Report",
         "",
@@ -249,7 +264,7 @@ def render_markdown(report: dict) -> str:
         "",
         "## Missing files",
         "",
-        f"- {report['missing_files'] or 'none'}",
+        *missing_file_lines,
         "",
         "## File reports",
         "",
