@@ -66,6 +66,7 @@ The repo is organized into four layers:
 - [Conversation synthesis example](/Users/jacklindberg/Documents/Product%20Marketing/examples/conversations/conversation-synthesis-example.md)
 - [Example client workspace](/Users/jacklindberg/Documents/Product%20Marketing/examples/client-workspace/README.md)
 - [Client config validation example](examples/client-workspace/client-config-validation-example.md)
+- [Client workspace evaluation example](examples/client-workspace/client-workspace-evaluation-example.md)
 
 ## Testing
 
@@ -80,5 +81,6 @@ Current coverage includes:
 - unit tests for parsing helpers, validation helpers, and Fireflies client behavior
 - integration tests for fetch, build, and validate scripts
 - an end-to-end test for the parsed-record to synthesis-input workflow
+- layered tests for the client-workspace evaluation artifact and script
 - layered tests for the workflow contract template and validator
 - layered tests for client config validation and fallback behavior

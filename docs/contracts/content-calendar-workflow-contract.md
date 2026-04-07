@@ -7,7 +7,7 @@ Define the minimum contract for producing a content calendar that stays tied to 
 ## Output artifact
 
 - `content-calendar`
-- schema: [content-calendar.md](/tmp/product-marketing-contracts/schemas/content-calendar.md)
+- schema: [content-calendar.md](../../schemas/content-calendar.md)
 
 ## Required inputs
 
