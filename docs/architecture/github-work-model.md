@@ -69,6 +69,8 @@ Each child issue should contain:
 - dependencies
 - acceptance criteria
 
+For workflow-heavy child issues, also add or update a matching workflow input/output contract when the issue introduces a reusable artifact path.
+
 ## Recommended GitHub Project fields
 
 - `Status`
