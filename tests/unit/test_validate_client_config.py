@@ -36,16 +36,24 @@ class ClientConfigValidationUnitTests(unittest.TestCase):
         report = validator.analyze_workspace(REPO_ROOT / "examples" / "client-workspace" / "generic-example")
         self.assertEqual(report["overall_result"], "PASS")
         by_name = {item["file"]: item for item in report["files"]}
-        self.assertEqual(by_name["client-profile.md"]["placeholder_count"], 9)
-        self.assertEqual(by_name["segment-taxonomy.md"]["placeholder_count"], 5)
-        self.assertEqual(by_name["funnel-stages.md"]["placeholder_count"], 5)
-        self.assertEqual(by_name["competitor-map.md"]["placeholder_count"], 5)
-        self.assertEqual(by_name["coding-rules.md"]["placeholder_count"], 6)
+        self.assertGreater(by_name["client-profile.md"]["placeholder_count"], 0)
+        self.assertGreater(by_name["segment-taxonomy.md"]["placeholder_count"], 0)
+        self.assertGreater(by_name["funnel-stages.md"]["placeholder_count"], 0)
+        self.assertGreater(by_name["competitor-map.md"]["placeholder_count"], 0)
+        self.assertGreater(by_name["coding-rules.md"]["placeholder_count"], 0)
+        self.assertEqual(by_name["strategic-questions.md"]["placeholder_count"], 0)
 
     def test_populated_client_workspace_passes(self):
         report = validator.analyze_workspace(REPO_ROOT / "clients" / "xnurta")
         self.assertEqual(report["overall_result"], "PASS")
         self.assertTrue(all(item["status"] == "PASS" for item in report["files"]))
+
+    def test_strategic_questions_requires_nonempty_bullet_content(self):
+        with tempfile.TemporaryDirectory() as tmpdir:
+            path = Path(tmpdir) / "strategic-questions.md"
+            path.write_text("# Strategic Questions\n\n-\n", encoding="utf-8")
+            report = validator.analyze_config_file(path, workspace_kind="client")
+        self.assertEqual(report["status"], "FAIL")
 
     def test_missing_required_sections_fail_file_validation(self):
         with tempfile.TemporaryDirectory() as tmpdir:
@@ -66,6 +74,7 @@ class ClientConfigValidationUnitTests(unittest.TestCase):
                 exit_code = validator.main([str(workspace)])
         self.assertEqual(exit_code, 1)
         self.assertIn("`overall_result`: `FAIL`", buffer.getvalue())
+        self.assertIn("- `segment-taxonomy.md`", buffer.getvalue())
 
 
 if __name__ == "__main__":

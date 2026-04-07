@@ -22,10 +22,16 @@ class ClientConfigValidationWorkflowIntegrationTests(unittest.TestCase):
 
     def test_main_writes_markdown_report_to_output_path(self):
         with tempfile.TemporaryDirectory() as tmpdir:
+            workspace = Path(tmpdir) / "client-pass"
+            config_dir = workspace / "config"
+            config_dir.mkdir(parents=True)
+            for name in validator.REQUIRED_FILES:
+                source = REPO_ROOT / "clients" / "xnurta" / "config" / name
+                (config_dir / name).write_text(source.read_text(encoding="utf-8"), encoding="utf-8")
             output_path = Path(tmpdir) / "reports" / "client-config-validation.md"
             exit_code = validator.main(
                 [
-                    str(REPO_ROOT / "clients" / "xnurta"),
+                    str(workspace),
                     "--output",
                     str(output_path),
                 ]
@@ -33,7 +39,7 @@ class ClientConfigValidationWorkflowIntegrationTests(unittest.TestCase):
             self.assertEqual(exit_code, 0)
             self.assertTrue(output_path.is_file())
             text = output_path.read_text(encoding="utf-8")
-            self.assertIn("`workspace_name`: `xnurta`", text)
+            self.assertIn("`workspace_name`: `client-pass`", text)
             self.assertIn("`overall_result`: `PASS`", text)
 
     def test_missing_config_file_surfaces_fail_state_and_missing_file_list(self):
@@ -51,6 +57,8 @@ class ClientConfigValidationWorkflowIntegrationTests(unittest.TestCase):
 
         self.assertEqual(report["overall_result"], "FAIL")
         self.assertIn("metrics-scorecard.md", report["missing_files"])
+        rendered = validator.render_markdown(report)
+        self.assertIn("- `metrics-scorecard.md`", rendered)
 
     def test_placeholder_only_client_file_fails_live_validation(self):
         with tempfile.TemporaryDirectory() as tmpdir:
