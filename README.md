@@ -59,6 +59,7 @@ The repo is organized into four layers:
 - [Discovery term dictionary](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/discovery-term-dictionary.md)
 - [Fireflies native skill mapping](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/fireflies-native-skill-mapping.md)
 - [GitHub work model](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/github-work-model.md)
+- [Workflow contracts](/Users/jacklindberg/Documents/Product%20Marketing/docs/contracts/README.md)
 - [Conversation synthesis input pack guide](/Users/jacklindberg/Documents/Product%20Marketing/examples/conversations/conversation-synthesis-input-pack.md)
 - [Generated conversation synthesis input pack](/Users/jacklindberg/Documents/Product%20Marketing/examples/conversations/conversation-synthesis-input-pack.generated.md)
 - [Conversation synthesis example](/Users/jacklindberg/Documents/Product%20Marketing/examples/conversations/conversation-synthesis-example.md)
@@ -79,3 +80,4 @@ Current coverage includes:
 - integration tests for fetch, build, and validate scripts
 - an end-to-end test for the parsed-record to synthesis-input workflow
 - layered tests for the client-workspace evaluation artifact and script
+- layered tests for the workflow contract template and validator

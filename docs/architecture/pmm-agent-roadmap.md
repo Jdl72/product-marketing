@@ -166,3 +166,9 @@ After that:
 6. Expand workflow input/output contracts across the schema-backed artifacts
 7. Add config validation and fallback behavior for client workspaces
 8. Extend evidence-layer retrieval beyond the current conversation workflow
+
+The workflow-contract step should create:
+
+- one reusable template
+- contract docs for the major schema-backed artifacts already present in the repo
+- validation checks that prevent the contracts from drifting into incomplete prose

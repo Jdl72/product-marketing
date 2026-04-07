@@ -19,6 +19,10 @@ Each job spec should define:
 - `evals`
   What pass/fail means
 
+Schema-backed workflows that are not yet full job specs should still declare their reusable boundaries in:
+
+- [workflow contracts](../docs/contracts/README.md)
+
 ## Current first-workstream
 
 The first jobs in this repo focus on customer conversations and feedback:

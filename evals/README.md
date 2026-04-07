@@ -37,5 +37,7 @@ These give the repo a baseline evaluation layer across the current schema-backed
 
 - `python3 scripts/validate_conversation_synthesis.py examples/conversations/conversation-synthesis-example.md`
   Confirms that key synthesis pattern sections cite supporting record ids.
+- `python3 scripts/validate_workflow_contracts.py`
+  Confirms schema-backed workflow contracts include required sections, schema links, and explicit failure behavior.
 - `python3 scripts/evaluate_client_workspace.py examples/client-workspace/generic-example`
   Generates a reusable evaluation artifact from the client workspace contract.
