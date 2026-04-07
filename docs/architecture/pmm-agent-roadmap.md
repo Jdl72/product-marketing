@@ -9,7 +9,7 @@ The repo has already completed the early setup work that this roadmap originally
 - GitHub epic and child-issue structure is in place
 - multi-client hardening docs and example workspace scaffolding now exist
 
-That means the roadmap should no longer treat issue setup and first examples as the immediate next work. The next practical gap is widening evaluation coverage across the major schema-backed outputs so the repo has a more complete quality layer.
+That means the roadmap should no longer treat issue setup and first examples as the immediate next work. Evaluation coverage and workflow contracts are now in place on the active implementation stack. The next practical gap is validating client configuration packs and defining fallback behavior so multi-client workflows stay reliable when a workspace is incomplete.
 
 ## Milestones
 
@@ -159,16 +159,20 @@ Completed foundations:
 
 Current next task:
 
-5. Add evaluation criteria for each major output type
+7. Add config validation and fallback behavior for client workspaces
 
 After that:
 
-6. Expand workflow input/output contracts across the schema-backed artifacts
-7. Add config validation and fallback behavior for client workspaces
 8. Extend evidence-layer retrieval beyond the current conversation workflow
 
-The workflow-contract step should create:
+Recently completed on the active roadmap stack:
 
-- one reusable template
-- contract docs for the major schema-backed artifacts already present in the repo
-- validation checks that prevent the contracts from drifting into incomplete prose
+5. Add evaluation criteria for each major output type
+6. Expand workflow input/output contracts across the schema-backed artifacts
+
+The config-validation step should create:
+
+- explicit validation rules for each required client config file
+- documented fallback behavior when client-specific config is incomplete
+- an automated validator that distinguishes template workspaces from populated client workspaces
+- examples and tests that keep validation behavior from drifting

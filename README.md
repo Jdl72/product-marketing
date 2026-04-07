@@ -53,6 +53,7 @@ The repo is organized into four layers:
 - [Discovery system flow](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/discovery-system-flow.md)
 - [Core vs client workspaces](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/core-vs-client-workspaces.md)
 - [Client workspace contract](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/client-workspace-contract.md)
+- [Client config validation](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/client-config-validation.md)
 - [Config-aware conversation runbook](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/config-aware-customer-conversation-runbook.md)
 - [Multi-client backlog](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/multi-client-backlog.md)
 - [Parse single conversation runbook](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/parse-single-conversation-runbook.md)
@@ -64,6 +65,7 @@ The repo is organized into four layers:
 - [Generated conversation synthesis input pack](/Users/jacklindberg/Documents/Product%20Marketing/examples/conversations/conversation-synthesis-input-pack.generated.md)
 - [Conversation synthesis example](/Users/jacklindberg/Documents/Product%20Marketing/examples/conversations/conversation-synthesis-example.md)
 - [Example client workspace](/Users/jacklindberg/Documents/Product%20Marketing/examples/client-workspace/README.md)
+- [Client config validation example](/Users/jacklindberg/Documents/Product%20Marketing/examples/client-workspace/client-config-validation-example.md)
 
 ## Testing
 
@@ -79,3 +81,4 @@ Current coverage includes:
 - integration tests for fetch, build, and validate scripts
 - an end-to-end test for the parsed-record to synthesis-input workflow
 - layered tests for the workflow contract template and validator
+- layered tests for client config validation and fallback behavior

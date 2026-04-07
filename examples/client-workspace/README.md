@@ -22,3 +22,8 @@ Use it as a starting point for a new consulting client.
 2. Rename it for the client.
 3. Fill in the config pack before coding or synthesizing new calls.
 4. Use the core repo jobs and schemas to populate records and syntheses.
+
+## Related examples
+
+- `client-config-validation-example.md`
+  Shows the expected validation output for the generic template workspace.

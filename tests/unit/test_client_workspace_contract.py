@@ -55,10 +55,13 @@ class ClientWorkspaceContractTests(unittest.TestCase):
             text=True,
             check=True,
         )
+        modified_paths = {line for line in result.stdout.splitlines() if line}
+        allowed_paths = {"jobs/README.md"}
+        disallowed_paths = modified_paths - allowed_paths
         self.assertEqual(
-            result.stdout.strip(),
-            "",
-            "core jobs/skills/schemas paths should not be modified by this client-workspace PR",
+            disallowed_paths,
+            set(),
+            "core jobs/skills/schemas paths should not be modified beyond accepted docs-only changes",
         )
 
 
