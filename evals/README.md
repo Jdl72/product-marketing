@@ -38,3 +38,5 @@ These give the repo a baseline evaluation layer across the current schema-backed
   Confirms that key synthesis pattern sections cite supporting record ids.
 - `python3 scripts/validate_workflow_contracts.py`
   Confirms schema-backed workflow contracts include required sections, schema links, and explicit failure behavior.
+- `python3 scripts/validate_client_config.py examples/client-workspace/generic-example`
+  Confirms the template client workspace keeps the required config structure and exposes fallback-ready placeholders.
