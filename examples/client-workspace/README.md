@@ -22,3 +22,9 @@ Use it as a starting point for a new consulting client.
 2. Rename it for the client.
 3. Fill in the config pack before coding or synthesizing new calls.
 4. Use the core repo jobs and schemas to populate records and syntheses.
+5. Run the client-workspace evaluation artifact to confirm the workspace still satisfies the reusable contract.
+
+## Related artifacts
+
+- [Client workspace evaluation example](/Users/jacklindberg/Documents/Product%20Marketing/examples/client-workspace/client-workspace-evaluation-example.md)
+- [Client workspace rubric](/Users/jacklindberg/Documents/Product%20Marketing/evals/client-workspace-rubric.md)
