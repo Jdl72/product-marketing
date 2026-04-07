@@ -7,7 +7,7 @@ Define the minimum contract for producing a persona pack that can guide position
 ## Output artifact
 
 - `persona-pack`
-- schema: [persona-pack.md](/tmp/product-marketing-contracts/schemas/persona-pack.md)
+- schema: [persona-pack.md](../../schemas/persona-pack.md)
 
 ## Required inputs
 

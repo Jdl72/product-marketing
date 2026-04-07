@@ -21,7 +21,7 @@ Each job spec should define:
 
 Schema-backed workflows that are not yet full job specs should still declare their reusable boundaries in:
 
-- [workflow contracts](/tmp/product-marketing-contracts/docs/contracts/README.md)
+- [workflow contracts](../docs/contracts/README.md)
 
 ## Current first-workstream
 

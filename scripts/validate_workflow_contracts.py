@@ -32,10 +32,6 @@ def validate_contract(path: Path) -> list[str]:
     match = SCHEMA_LINK_RE.search(text)
     if not match:
         errors.append(f"{path.name}: missing schema link in output artifact section")
-    else:
-        label = match.group(1)
-        if label.startswith("conversation-"):
-            pass
 
     if "fail if" not in text.lower():
         errors.append(f"{path.name}: missing explicit fail-if guidance")
