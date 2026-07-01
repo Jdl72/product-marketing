@@ -20,7 +20,7 @@ Use this tab to govern order of operations across the full launch process.
 
 ## Non-negotiables
 
-- Work left to right through the five phases.
+- Work left to right through the six phases.
 - Complete tabs in numbered order within each phase.
 - Do not skip ahead because a later narrative artifact feels more urgent.
 - Stop if required inputs are missing and name the missing prerequisite explicitly.
@@ -59,9 +59,13 @@ Use this tab to govern order of operations across the full launch process.
 - `5.2 Impact Protocol`
 - `5.3 Certification Rubric`
 
+### Phase 6: Publish
+
+- `6.1 Release Article`
+
 ## Instructions
 
-1. Work left to right through the five phases.
+1. Work left to right through the six phases.
 2. Complete tabs in numbered order within each phase.
 3. Before starting any tab, confirm its listed inputs exist.
 4. After finishing any tab, record its outputs and route them to the downstream tabs that consume them.
