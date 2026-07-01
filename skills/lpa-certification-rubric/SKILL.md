@@ -53,3 +53,10 @@ Certification requires:
 - `Dimensions Below 3`
 - `Certification Status`
 - `Next Required Artifact`
+
+## Handoff
+
+Feeds:
+
+- `Stage Gate Architecture` (Lightning Strike gate)
+- `Release Article` (Tier 1/Tier 2 only, once `Certification Status` is `Certified`)
