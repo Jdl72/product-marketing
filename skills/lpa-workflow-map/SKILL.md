@@ -62,6 +62,7 @@ Use this tab to govern order of operations across the full launch process.
 ### Phase 6: Publish
 
 - `6.1 Release Article`
+- `6.2 Monthly Innovation Roundup`
 
 ## Instructions
 
