@@ -62,21 +62,21 @@ flowchart TD
     E1 --> E2["Skill: Synthesize Conversation Set"]
     E2 --> E3["Artifact: Conversation Synthesis"]
 
-    E3 --> F1["Agent: Persona Builder"]
-    E3 --> F2["Agent: Buyer Journey Mapper"]
-    E3 --> F3["Agent: Positioning Input Builder"]
-    E3 --> F4["Agent: Win-Loss Analyzer"]
-    E3 --> F5["Agent: Objection and Alternative Mapper"]
+    E2 --> E4["Artifact: Positioning Brief (built, gated)"]
+    E4 --> PMM["PMM Asset Workflow: Positioning Canvas (workbook 3.1)"]
 
-    F1 --> G1["Artifact: Persona Pack"]
-    F2 --> G2["Artifact: Buyer Journey Map"]
-    F3 --> G3["Artifact: Positioning Brief Input"]
-    F4 --> G4["Artifact: Win-Loss Synthesis"]
-    F5 --> G5["Artifact: Objection and Alternative Map"]
+    E3 --> F1["Agent: Persona Builder (roadmap)"]
+    E3 --> F2["Agent: Buyer Journey Mapper (roadmap)"]
+    E3 --> F4["Agent: Win-Loss Analyzer (roadmap)"]
+    E3 --> F5["Agent: Objection and Alternative Mapper (roadmap)"]
 
-    G1 --> H["Downstream PMM System"]
+    F1 --> G1["Artifact: Persona Pack (roadmap)"]
+    F2 --> G2["Artifact: Buyer Journey Map (roadmap)"]
+    F4 --> G4["Artifact: Win-Loss Synthesis (roadmap)"]
+    F5 --> G5["Artifact: Objection and Alternative Map (roadmap)"]
+
+    G1 --> H["Downstream PMM System (roadmap)"]
     G2 --> H
-    G3 --> H
     G4 --> H
     G5 --> H
 
@@ -86,6 +86,8 @@ flowchart TD
     H --> H4["Sales Enablement"]
     H --> H5["Campaign Support"]
 ```
+
+The `Positioning Brief` branch is the only edge in this diagram that's actually wired end to end today — it's produced by the same `Synthesize Conversation Set` job that produces `Conversation Synthesis` (no separate "Positioning Input Builder" agent needed), gated on record count and coverage, and consumed directly by `lpa-positioning-canvas` in the PMM asset workflow. Everything marked `(roadmap)` has a schema and, in some cases, an eval rubric, but no implementing skill or agent — see the build order below before treating any of it as available.
 
 ## Simple mental model
 
@@ -105,13 +107,17 @@ flowchart LR
 
 Skills should hold the stable method.
 
-Recommended discovery-first skills:
+Discovery-workflow jobs (`jobs/`, this document's subject):
 
 - `Gather Customer Conversations`
 - `Parse Single Conversation`
 - `Synthesize Conversation Set`
-- `Customer Interview`
-- `Weekly Discovery Log`
+
+PMM asset-workflow skills that consume discovery output (`skills/lpa-*`, live in the launch workbook — see `lpa-workflow-map`, not this document):
+
+- `Customer Interview` — optionally briefed by `Conversation Synthesis`
+- `Weekly Discovery Log` — optionally enriched by `Conversation Synthesis`
+- `Positioning Canvas` — optionally accelerated by `Positioning Brief`
 
 ### Agents
 
@@ -132,14 +138,20 @@ Recommended discovery-first agents:
 
 ## Core artifacts
 
-These are the required evidence artifacts for discovery-first PMM work:
+Built today:
 
 - `Conversation Source Pack`
 - `Conversation Record`
 - `Conversation Synthesis`
+- `Positioning Brief` (gated — see `jobs/synthesize-conversation-set.md`)
+
+Roadmap — schema and/or eval rubric exist, no implementing skill or agent yet:
+
 - `Persona Pack`
 - `Buyer Journey Map`
-- `Positioning Brief Input`
+- `Win-Loss Synthesis`
+- `Objection and Alternative Map`
+- `GTM Plan`
 
 ## Recommended build order
 
@@ -156,8 +168,9 @@ Definition of done:
 - raw sources are inventoried
 - parsed records are consistent
 - synthesis can support one downstream PMM artifact
+- **done — plus one strategy-layer artifact shipped early:** `Synthesize Conversation Set` also produces a gated `Positioning Brief` that feeds `lpa-positioning-canvas` directly. This jumped ahead of Phase 2 below because it required no new agent — see "System view" above.
 
-### Phase 2: Insight layer
+### Phase 2: Insight layer (roadmap — not started)
 
 Build next:
 
@@ -170,11 +183,11 @@ Definition of done:
 
 - the system can produce structured buyer understanding from conversation evidence
 
-### Phase 3: Strategy layer
+### Phase 3: Strategy layer (roadmap — Positioning Brief already shipped, see Phase 1)
 
 Build next:
 
-8. `Positioning Brief`
+8. ~~`Positioning Brief`~~ — built, see Phase 1
 9. `Value Proposition Brief`
 10. `GTM Plan`
 
@@ -223,8 +236,8 @@ then it should not be built yet.
 
 This roadmap artifact connects to:
 
-- [First Workstream: Customer Conversations](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/first-workstream-customer-conversations.md)
-- [PMM Agent System](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/pmm-agent-system.md)
-- [Client Workspace Contract](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/client-workspace-contract.md)
-- [Config-Aware Customer Conversation Runbook](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/config-aware-customer-conversation-runbook.md)
-- [Jobs README](/Users/jacklindberg/Documents/Product%20Marketing/jobs/README.md)
+- [First Workstream: Customer Conversations](first-workstream-customer-conversations.md)
+- [PMM Agent System](pmm-agent-system.md)
+- [Client Workspace Contract](client-workspace-contract.md)
+- [Config-Aware Customer Conversation Runbook](config-aware-customer-conversation-runbook.md)
+- [Jobs README](../../jobs/README.md)

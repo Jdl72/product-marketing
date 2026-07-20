@@ -12,9 +12,9 @@
 ## Included records
 
 - `convrec-fireflies-01KM6GSRBZNXNSKQW5BQNDG2M9`
-  [Ejam Pricing Follow-Up](/Users/jacklindberg/Documents/Product%20Marketing/examples/conversations/parsed-fireflies-ejam-pricing-follow-up.md)
+  [Ejam Pricing Follow-Up](parsed-fireflies-ejam-pricing-follow-up.md)
 - `convrec-fireflies-01KMDFR8SB2ZEPT3452AFH85F9`
-  [Schleich / Copenhagen DSP Conversation](/Users/jacklindberg/Documents/Product%20Marketing/examples/conversations/parsed-fireflies-schleich-copenhagen-dsp.md)
+  [Schleich / Copenhagen DSP Conversation](parsed-fireflies-schleich-copenhagen-dsp.md)
 
 ## Core outputs
 

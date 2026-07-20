@@ -11,9 +11,9 @@
 ## Included records
 
 - `convrec-fireflies-01KM6GSRBZNXNSKQW5BQNDG2M9`
-  Source: [parsed-fireflies-ejam-pricing-follow-up.md](/Users/jacklindberg/Documents/Product Marketing/examples/conversations/parsed-fireflies-ejam-pricing-follow-up.md)
+  Source: [parsed-fireflies-ejam-pricing-follow-up.md](parsed-fireflies-ejam-pricing-follow-up.md)
 - `convrec-fireflies-01KMDFR8SB2ZEPT3452AFH85F9`
-  Source: [parsed-fireflies-schleich-copenhagen-dsp.md](/Users/jacklindberg/Documents/Product Marketing/examples/conversations/parsed-fireflies-schleich-copenhagen-dsp.md)
+  Source: [parsed-fireflies-schleich-copenhagen-dsp.md](parsed-fireflies-schleich-copenhagen-dsp.md)
 
 ## Record: `convrec-fireflies-01KM6GSRBZNXNSKQW5BQNDG2M9`
 

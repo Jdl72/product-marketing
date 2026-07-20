@@ -103,5 +103,5 @@ Client workspaces are external consumers that:
 
 ## Related docs
 
-- [Client Workspace Contract](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/client-workspace-contract.md)
-- [Config-Aware Customer Conversation Runbook](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/config-aware-customer-conversation-runbook.md)
+- [Client Workspace Contract](client-workspace-contract.md)
+- [Config-Aware Customer Conversation Runbook](config-aware-customer-conversation-runbook.md)

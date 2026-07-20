@@ -106,7 +106,7 @@ Save the conversation record and route it to synthesis.
 
 Use:
 
-- [conversation-record.md](/Users/jacklindberg/Documents/Product%20Marketing/schemas/conversation-record.md)
+- [conversation-record.md](../schemas/conversation-record.md)
 
 ## Human review gate
 

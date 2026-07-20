@@ -44,7 +44,7 @@ Complete each step in order. Do not skip ahead.
 
 - `Customer Interview`
 - `Weekly Discovery Log`
-- `Attack Matrix`
+- `Positioning Brief` (optional — from the discovery workflow's `Synthesize Conversation Set` job, if the record count and coverage supported one. Use it to accelerate a first draft; it does not replace Customer Interview evidence or the sequence below.)
 
 ## Required outputs
 
@@ -57,12 +57,13 @@ Complete each step in order. Do not skip ahead.
 
 ## Instructions
 
-1. Use validated pain and customer language from interviews.
-2. Define alternatives broadly, including status quo workarounds.
-3. State how the launch is different in commercially meaningful terms.
-4. Use ERRC logic when helpful: eliminate, reduce, raise, create.
-5. Keep proof hooks tied to the `Eval Framework`.
-6. Name disqualifying characteristics explicitly.
+1. If a `Positioning Brief` exists, read it first — treat its draft promise, alternatives, and one-liner as a hypothesis to stress-test against Customer Interview evidence, not as a finished answer.
+2. Use validated pain and customer language from interviews.
+3. Define alternatives broadly, including status quo workarounds.
+4. State how the launch is different in commercially meaningful terms.
+5. Use ERRC logic when helpful: eliminate, reduce, raise, create.
+6. Keep proof hooks tied to the `Eval Framework`.
+7. Name disqualifying characteristics explicitly.
 
 ## Handoff
 

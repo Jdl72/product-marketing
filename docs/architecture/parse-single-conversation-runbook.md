@@ -49,7 +49,7 @@ If the source is partial or messy, note that before parsing.
 
 Use:
 
-- [parse-single-conversation.md](/Users/jacklindberg/Documents/Product%20Marketing/jobs/parse-single-conversation.md)
+- [parse-single-conversation.md](../../jobs/parse-single-conversation.md)
 
 The goal is not elegant prose.
 The goal is a usable `conversation-record`.
@@ -58,7 +58,7 @@ The goal is a usable `conversation-record`.
 
 Use:
 
-- [conversation-record.md](/Users/jacklindberg/Documents/Product%20Marketing/schemas/conversation-record.md)
+- [conversation-record.md](../../schemas/conversation-record.md)
 
 Do not force all fields if the source does not support them.
 Instead:
@@ -82,7 +82,7 @@ If the transcript has speaker labels:
 
 Use:
 
-- [parse-single-conversation-example-template.md](/Users/jacklindberg/Documents/Product%20Marketing/examples/conversations/parse-single-conversation-example-template.md)
+- [parse-single-conversation-example-template.md](../../examples/conversations/parse-single-conversation-example-template.md)
 
 This becomes the first example and quality anchor.
 
@@ -90,7 +90,7 @@ This becomes the first example and quality anchor.
 
 Use:
 
-- [conversation-record-rubric.md](/Users/jacklindberg/Documents/Product%20Marketing/evals/conversation-record-rubric.md)
+- [conversation-record-rubric.md](../../evals/conversation-record-rubric.md)
 
 Capture:
 

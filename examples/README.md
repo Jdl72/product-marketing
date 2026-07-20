@@ -30,8 +30,8 @@ The first examples should focus on:
 
 Current concrete examples:
 
-- [Parsed conversation: Ejam Pricing Follow-Up](/Users/jacklindberg/Documents/Product%20Marketing/examples/conversations/parsed-fireflies-ejam-pricing-follow-up.md)
-- [Parsed conversation: Schleich / Copenhagen DSP Conversation](/Users/jacklindberg/Documents/Product%20Marketing/examples/conversations/parsed-fireflies-schleich-copenhagen-dsp.md)
-- [Conversation synthesis input pack guide](/Users/jacklindberg/Documents/Product%20Marketing/examples/conversations/conversation-synthesis-input-pack.md)
-- [Generated conversation synthesis input pack](/Users/jacklindberg/Documents/Product%20Marketing/examples/conversations/conversation-synthesis-input-pack.generated.md)
-- [Conversation synthesis example](/Users/jacklindberg/Documents/Product%20Marketing/examples/conversations/conversation-synthesis-example.md)
+- [Parsed conversation: Ejam Pricing Follow-Up](conversations/parsed-fireflies-ejam-pricing-follow-up.md)
+- [Parsed conversation: Schleich / Copenhagen DSP Conversation](conversations/parsed-fireflies-schleich-copenhagen-dsp.md)
+- [Conversation synthesis input pack guide](conversations/conversation-synthesis-input-pack.md)
+- [Generated conversation synthesis input pack](conversations/conversation-synthesis-input-pack.generated.md)
+- [Conversation synthesis example](conversations/conversation-synthesis-example.md)

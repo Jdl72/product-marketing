@@ -119,7 +119,7 @@ Freeze the pack for parsing and hand off to the next job.
 
 Use:
 
-- [conversation-source-pack.md](/Users/jacklindberg/Documents/Product%20Marketing/schemas/conversation-source-pack.md)
+- [conversation-source-pack.md](../schemas/conversation-source-pack.md)
 
 ## Readiness status
 

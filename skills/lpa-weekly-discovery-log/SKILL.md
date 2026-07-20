@@ -11,6 +11,13 @@ Portable markdown module for workbook artifact `2.3 Weekly Discovery Log`.
 
 Create the weekly synthesis layer between raw evidence and narrative decisions.
 
+## Inputs
+
+- `Interview Snapshot` (§2F) and `Cross-Interview Pattern Synthesis` (§2H) from `Customer Interview`
+- `Risk & Assumption Register`
+- `Eval Framework` pass/fail results, when a run validated or falsified a hypothesis this week
+- `Conversation Synthesis` (optional — if the discovery workflow produced one covering this week's period, fold its patterns into Section 3, cited by `convrec-ID`)
+
 ## Section order
 
 1. `SECTION 1 — DISCOVERY DASHBOARD`
@@ -94,6 +101,8 @@ Track recurring signals across interviews. Add a new row when a pattern appears 
 **Saturation rule:** When a pattern appears in 3+ independent interviews with consistent signal, mark Strength as Strong and flag it for downstream action. Stop adding interviews for that specific pattern.
 
 **Status options:** Active / Acted On / Contradicted
+
+**Conversation Synthesis patterns:** When a `Conversation Synthesis` covers this week's period, add its `strongly_supported_patterns` and `emerging_patterns` as rows here, citing `convrec-ID`s in the Weeks Referenced / evidence columns alongside interview IDs. Do not merge a call-mined pattern with an interview-derived pattern in the same row unless both cite the same underlying signal — keep the two sourcing chains traceable.
 
 ---
 
