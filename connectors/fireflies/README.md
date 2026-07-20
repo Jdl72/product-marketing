@@ -22,7 +22,7 @@ Do not hardcode API keys in the repo.
 
 Use:
 
-- [scripts/fetch_fireflies_transcripts.py](/Users/jacklindberg/Documents/Product%20Marketing/scripts/fetch_fireflies_transcripts.py)
+- [scripts/fetch_fireflies_transcripts.py](../../scripts/fetch_fireflies_transcripts.py)
 
 Example:
 

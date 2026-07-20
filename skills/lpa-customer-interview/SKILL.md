@@ -15,6 +15,7 @@ Gather primary evidence that validates pain, alternatives, trust requirements, a
 
 - `START HERE`
 - `Risk & Assumption Register`
+- `Conversation Synthesis` (optional — if the discovery workflow has already run over Fireflies calls for this segment, use it to sharpen §2C and §2D, not to replace the interview)
 
 ## Four Core Principles
 
@@ -28,6 +29,7 @@ Gather primary evidence that validates pain, alternatives, trust requirements, a
 ### Phase 1 — Prepare
 
 - Read `START HERE` and `Risk & Assumption Register` before opening a scheduling link.
+- If a `Conversation Synthesis` exists for this segment, read its `strongly_supported_patterns` and `emerging_patterns` before writing the pre-write — treat them as prior signal to test, not as confirmed fact.
 - Complete §2C Research Brief for the participant.
 - Write §2D Learning Goals (3 goals tied to specific RAR hypotheses).
 - Confirm the participant passes §2A screener criteria.

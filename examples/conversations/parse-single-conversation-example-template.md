@@ -19,7 +19,7 @@ Write 2-4 lines describing what this source is and why it was chosen.
 
 Use the schema in:
 
-- [conversation-record.md](/Users/jacklindberg/Documents/Product%20Marketing/schemas/conversation-record.md)
+- [conversation-record.md](../../schemas/conversation-record.md)
 
 Suggested sections:
 

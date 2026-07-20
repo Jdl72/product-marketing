@@ -2,7 +2,7 @@
 
 ## Core job
 
-When I have multiple parsed customer conversations, help me synthesize them into PMM evidence that can drive personas, positioning, GTM, and sales enablement.
+When I have multiple parsed customer conversations, help me synthesize them into PMM evidence. Today that evidence directly produces a gated `positioning-brief` for the PMM asset workflow; personas, GTM, and sales enablement are roadmap consumers with no implementing skill yet (see Downstream linkage below).
 
 ## Trigger
 
@@ -28,6 +28,19 @@ Run this job when:
 - alternatives and competitive references
 - language to use / avoid
 - evidence confidence summary
+- `positioning-brief` — only when the Positioning Brief gate below is met. This is the one downstream artifact this job is built to hand off directly into the PMM asset workflow (`lpa-positioning-canvas`, workbook tab 3.1). Persona pack, buyer journey, win-loss, and GTM plan are NOT produced by this job — they remain roadmap items with no implementing skill yet (see `docs/architecture/discovery-system-flow.md`).
+
+## Positioning Brief gate
+
+Produce a `positioning-brief` artifact only if all of the following hold. If any fail, omit it and say why in `recommended_downstream_artifacts`.
+
+- At least 5 independent records support the target segment (the same threshold `strongly_supported` segment-level claims already require).
+- The synthesis has `strongly_supported_patterns` covering, at minimum, the core problem, at least one status quo alternative, and at least one competitor or substitute.
+- `language_to_use` has enough signal to draft a one-liner in the customer's own words, not invented category language.
+
+When the gate passes, populate every field in [positioning-brief.md](../schemas/positioning-brief.md) directly from the synthesis — `evidence_basis` must cite the specific `convrec-ID`s behind each claim, matching the citation discipline used elsewhere in this synthesis. Run [positioning-brief-rubric.md](../evals/positioning-brief-rubric.md) before treating the brief as ready to hand off.
+
+`lpa-positioning-canvas` treats this brief as an optional first-draft accelerant, not a substitute for its own April Dunford sequence or for `Customer Interview` evidence — the workbook skill still owns the final Positioning Canvas.
 
 ## Universal job map
 
@@ -75,7 +88,7 @@ Re-scope or split the synthesis if segments are blending together.
 
 ### 8. Conclude
 
-Save the synthesis and hand it to persona, positioning, GTM, or sales jobs.
+Save the synthesis. If the Positioning Brief gate is met, produce the brief and hand it to `lpa-positioning-canvas`. Persona, GTM, and sales-enablement handoffs are roadmap only until those skills exist.
 
 ## Method
 
@@ -94,20 +107,21 @@ Save the synthesis and hand it to persona, positioning, GTM, or sales jobs.
 
 ## Downstream linkage
 
-This synthesis is designed to feed the following downstream PMM artifacts directly:
+This synthesis is designed to feed one downstream PMM artifact directly today, plus several planned ones:
 
-- **Persona pack** (e.g., issue #10): Use `top_recurring_pains`, `desired_outcomes`, `evaluation_criteria`, `stakeholder_map` signals, and `representative_quotes` as the primary evidence base. Personas must not be created without at least one synthesis that cites multiple records.
-- **Positioning brief** (e.g., issue #12): Use `strongly_supported_patterns`, `competitors_and_substitutes`, `language_to_use`, and `strategic_implications` as the evidence inputs. Positioning claims must trace back to specific record citations in the synthesis.
-- **Objection handling assets**: Use `objections`, `contradictory_signals`, and `trust_requirements`.
-- **Sales enablement**: Use `buying_triggers`, `evaluation_criteria`, and `language_to_use` / `language_to_avoid`.
+- **Positioning brief** — built. See the Positioning Brief gate above. Uses `strongly_supported_patterns`, `competitors_and_substitutes`, `language_to_use`, and `strategic_implications` as the evidence inputs, and hands off to `lpa-positioning-canvas` (workbook 3.1). Positioning claims must trace back to specific record citations in the synthesis.
+- **Persona pack** (roadmap, issue #10 — no implementing skill exists yet): once built, would use `top_recurring_pains`, `desired_outcomes`, `evaluation_criteria`, `stakeholder_map` signals, and `representative_quotes` as the primary evidence base.
+- **Objection handling assets** (roadmap — no implementing skill exists yet): would use `objections`, `contradictory_signals`, and `trust_requirements`.
+- **Sales enablement** (roadmap — no implementing skill exists yet): would use `buying_triggers`, `evaluation_criteria`, and `language_to_use` / `language_to_avoid`.
 
-When producing the synthesis, set `recommended_downstream_artifacts` to name the specific artifacts this synthesis can credibly support given its record count and coverage.
+When producing the synthesis, set `recommended_downstream_artifacts` to name the specific artifacts this synthesis can credibly support given its record count and coverage — today that list can only ever include `positioning-brief`, since it's the only downstream artifact with a skill built to consume it.
 
 ## Artifact schema
 
 Use:
 
-- [conversation-synthesis.md](/Users/jacklindberg/Documents/Product%20Marketing/schemas/conversation-synthesis.md)
+- [conversation-synthesis.md](../schemas/conversation-synthesis.md)
+- [positioning-brief.md](../schemas/positioning-brief.md) — only when the Positioning Brief gate above is met
 
 ## Human review gate
 
@@ -131,6 +145,8 @@ Pass if:
 - representative quotes include speaker attribution, record-level citation, and a transcript anchor when available
 - the synthesis names at least one downstream artifact it can credibly support
 - contradictions are preserved and not collapsed into a single summary
+- if a `positioning-brief` was produced, it passes [positioning-brief-rubric.md](../evals/positioning-brief-rubric.md)
+- if the Positioning Brief gate was not met, `positioning-brief` was omitted rather than produced with placeholder or invented fields
 
 Fail if:
 

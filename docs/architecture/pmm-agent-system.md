@@ -154,8 +154,8 @@ Client workspaces own:
 
 See:
 
-- [Core vs Client Workspaces](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/core-vs-client-workspaces.md)
-- [Client Workspace Contract](/Users/jacklindberg/Documents/Product%20Marketing/docs/architecture/client-workspace-contract.md)
+- [Core vs Client Workspaces](core-vs-client-workspaces.md)
+- [Client Workspace Contract](client-workspace-contract.md)
 
 ## Target system architecture
 

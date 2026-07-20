@@ -46,10 +46,10 @@ Best place in the pipeline:
 
 Best schema targets:
 
-- [conversation-record.md](/Users/jacklindberg/Documents/Product%20Marketing/schemas/conversation-record.md)
+- [conversation-record.md](../../schemas/conversation-record.md)
   likely fields:
   `primary_pains`, `secondary_pains`, `desired_outcomes`, `summary_of_signal`
-- [conversation-synthesis.md](/Users/jacklindberg/Documents/Product%20Marketing/schemas/conversation-synthesis.md)
+- [conversation-synthesis.md](../../schemas/conversation-synthesis.md)
   likely fields:
   `top_recurring_pains`, `strongly_supported_patterns`, `emerging_patterns`
 
@@ -76,10 +76,10 @@ Best place in the pipeline:
 
 Best schema targets:
 
-- [conversation-record.md](/Users/jacklindberg/Documents/Product%20Marketing/schemas/conversation-record.md)
+- [conversation-record.md](../../schemas/conversation-record.md)
   likely fields:
   `current_alternatives`, `competitors_mentioned`, `objections`, `evaluation_criteria`
-- [conversation-synthesis.md](/Users/jacklindberg/Documents/Product%20Marketing/schemas/conversation-synthesis.md)
+- [conversation-synthesis.md](../../schemas/conversation-synthesis.md)
   likely fields:
   `current_alternatives`, `competitors_and_substitutes`, `objections`, `strategic_implications`
 
@@ -106,10 +106,10 @@ Best place in the pipeline:
 
 Best schema targets:
 
-- [conversation-record.md](/Users/jacklindberg/Documents/Product%20Marketing/schemas/conversation-record.md)
+- [conversation-record.md](../../schemas/conversation-record.md)
   likely fields:
   `competitors_mentioned`, `current_alternatives`, `term_normalization_notes`
-- [conversation-synthesis.md](/Users/jacklindberg/Documents/Product%20Marketing/schemas/conversation-synthesis.md)
+- [conversation-synthesis.md](../../schemas/conversation-synthesis.md)
   likely fields:
   `competitors_and_substitutes`, `emerging_patterns`
 
@@ -136,10 +136,10 @@ Best place in the pipeline:
 
 Best schema targets:
 
-- [conversation-record.md](/Users/jacklindberg/Documents/Product%20Marketing/schemas/conversation-record.md)
+- [conversation-record.md](../../schemas/conversation-record.md)
   likely fields:
   `evaluation_criteria`, `trust_requirements`, `language_to_use`, `summary_of_signal`
-- [conversation-synthesis.md](/Users/jacklindberg/Documents/Product%20Marketing/schemas/conversation-synthesis.md)
+- [conversation-synthesis.md](../../schemas/conversation-synthesis.md)
   likely fields:
   `evaluation_criteria`, `trust_requirements`, `strategic_implications`
 
@@ -166,7 +166,7 @@ Best place in the pipeline:
 
 Best schema targets:
 
-- [conversation-record.md](/Users/jacklindberg/Documents/Product%20Marketing/schemas/conversation-record.md)
+- [conversation-record.md](../../schemas/conversation-record.md)
   likely fields:
   `buying_triggers`, `evaluation_criteria`, `open_questions`, `summary_of_signal`
 - later possible downstream artifact:
@@ -196,10 +196,10 @@ Best place in the pipeline:
 
 Best schema targets:
 
-- [conversation-record.md](/Users/jacklindberg/Documents/Product%20Marketing/schemas/conversation-record.md)
+- [conversation-record.md](../../schemas/conversation-record.md)
   likely fields:
   `buying_triggers`, `current_alternatives`, `evaluation_criteria`, `summary_of_signal`
-- [conversation-synthesis.md](/Users/jacklindberg/Documents/Product%20Marketing/schemas/conversation-synthesis.md)
+- [conversation-synthesis.md](../../schemas/conversation-synthesis.md)
   likely fields:
   `buying_triggers`, `strongly_supported_patterns`, `strategic_implications`
 
@@ -281,7 +281,7 @@ Why:
 
 The likely next additions if these are implemented:
 
-- extend [conversation-record.md](/Users/jacklindberg/Documents/Product%20Marketing/schemas/conversation-record.md) with optional `native_extractor_signals`
+- extend [conversation-record.md](../../schemas/conversation-record.md) with optional `native_extractor_signals`
 - add a Fireflies enrichment script that fetches transcript plus selected native-skill outputs
 - add validation rules that native-skill output must not replace transcript-cited evidence
 

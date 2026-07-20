@@ -64,6 +64,12 @@ Use this tab to govern order of operations across the full launch process.
 - `6.1 Release Article`
 - `6.2 Monthly Innovation Roundup`
 
+## Cross-cutting artifacts
+
+Not a numbered tab — runs continuously alongside the phases above rather than at one point in the sequence.
+
+- `Competitive Intelligence Log` — ongoing from Phase 2 (Evidence) through post-launch. Log signals as encountered; review before every competitive deal and on a fixed monthly cadence. Feeds `Positioning Canvas` (3.1), `Attack Matrix` (3.4), and `Battle Cards` (4.3) — update those tabs within one sprint of a staleness trigger, don't wait for the phase that owns them to come up in sequence.
+
 ## Instructions
 
 1. Work left to right through the six phases.
