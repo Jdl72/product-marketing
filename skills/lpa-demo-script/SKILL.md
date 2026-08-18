@@ -1,6 +1,6 @@
 ---
 name: lpa-demo-script
-description: Draft the Demo Script from the Lindberg launch workbook. Use when a certified release needs the demo video/GIF script that proves the customer outcome live — required before the Release Article, before sales enablement, and before Stage Gate's Lightning Strike gate.
+description: Draft the Demo Script from the Lindberg launch workbook. Use when a certified release needs the demo video/GIF script that proves the customer outcome live — required before the Release Article and Stage Gate's Lightning Strike gate, and used to update the live sales demo path.
 ---
 
 # Demo Script
@@ -9,7 +9,7 @@ Portable markdown module for workbook artifact `6.1 Demo Script`.
 
 ## Purpose
 
-Script the demo that proves the outcome claimed in the `PR-FAQ` and `Positioning Canvas`, so the `Release Article`, sales enablement, and `Lightning Strike` all draw from one verified, reusable demo instead of each team improvising its own.
+Script the demo that proves the outcome claimed in the `PR-FAQ` and `Positioning Canvas`, so the `Release Article`, live sales demo path, and `Lightning Strike` all draw from one verified, reusable demo instead of each team improvising its own.
 
 ## Core rule
 
