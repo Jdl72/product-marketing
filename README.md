@@ -9,7 +9,7 @@ The core rule: **evidence before messaging**. Every downstream artifact cites th
 The repo runs two workflows. Knowing which one you're in tells you which files matter.
 
 1. **Discovery** (`jobs/`) turns raw customer conversations into structured, cited evidence. It runs ahead of and alongside launch work.
-2. **PMM assets** (`skills/lpa-*`) is a 19-tab launch workbook that moves a release through six phases, Frame to Publish.
+2. **PMM assets** (`skills/lpa-*`) is a 20-tab launch workbook that moves a release through six phases, Frame to Publish.
 
 They meet at two optional points. The PMM workflow never blocks on discovery having run — discovery makes it faster and better-grounded when it exists.
 
@@ -34,7 +34,7 @@ flowchart TB
         N["Phase 3 Narrative<br/>Positioning Canvas · PR-FAQ · Elevator Pitch · Attack Matrix"]
         V["Phase 4 Validate<br/>Bar Test · Segment Playbooks · Battle Cards · ROI Calculator"]
         L["Phase 5 Launch<br/>Stage Gate · Impact Protocol · Certification Rubric"]
-        PUB["Phase 6 Publish<br/>Release Article · Monthly Innovation Roundup"]
+        PUB["Phase 6 Publish<br/>Demo Script · Release Article · Monthly Innovation Roundup"]
         F --> E --> N --> V --> L --> PUB
     end
 
@@ -58,7 +58,7 @@ Read these three, in this order. Together they cover the whole system.
 
 1. **This README** — what exists and how the pieces relate.
 2. **[CLAUDE.md](CLAUDE.md)** — the operating contract. Which skill to use for which job, and the two-workflow split above stated as rules an agent follows.
-3. **[skills/lpa-workflow-map/SKILL.md](skills/lpa-workflow-map/SKILL.md)** — the six phases, all 19 tabs, and what feeds what.
+3. **[skills/lpa-workflow-map/SKILL.md](skills/lpa-workflow-map/SKILL.md)** — the six phases, all 20 tabs, and what feeds what.
 
 Then branch by what you're doing:
 
@@ -78,7 +78,7 @@ Worked examples live in [examples/](examples/README.md) — parsed conversations
 
 | Directory | Holds | Notes |
 |---|---|---|
-| `skills/` | 21 skills, one `SKILL.md` each | 19 numbered workbook tabs, plus `lpa-workflow-map` and the continuous `lpa-competitive-intelligence-log` |
+| `skills/` | 22 skills, one `SKILL.md` each | 20 numbered workbook tabs, plus `lpa-workflow-map` and the continuous `lpa-competitive-intelligence-log` |
 | `jobs/` | 3 discovery job specs | Job = trigger, inputs, method, artifacts, review gates, evals |
 | `schemas/` | Output contracts | Artifacts passed between stages must conform; some are roadmap scaffolding (see below) |
 | `evals/` | Quality rubrics | Human-readable scoring before automation |

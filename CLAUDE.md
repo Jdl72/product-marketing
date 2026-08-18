@@ -9,7 +9,7 @@ Always use the skills in this repo before generating PMM output. Do not invent a
 This repo runs two distinct workflows. Know which one you're in before picking a skill.
 
 1. **Discovery workflow** (`jobs/`) — turns raw customer conversations into evidence. Runs ahead of and alongside the PMM workflow, not inside it.
-2. **PMM asset workflow** (`skills/lpa-*`) — the 19-tab launch workbook, sequenced by `lpa-workflow-map`. Turns evidence into positioning, launch, and GTM artifacts.
+2. **PMM asset workflow** (`skills/lpa-*`) — the 20-tab launch workbook, sequenced by `lpa-workflow-map`. Turns evidence into positioning, launch, and GTM artifacts.
 
 They connect at two points, both optional accelerants — the PMM workflow never blocks on discovery being run first:
 
@@ -58,6 +58,7 @@ Full phase-by-phase sequence, inputs, and handoffs live in `lpa-workflow-map` �
 | Go/no-go stage gate review | `lpa-stage-gate-architecture` |
 | Impact protocol | `lpa-impact-protocol` |
 | Certification status before release assets ship | `lpa-certification-rubric` |
+| Demo script for a certified release | `lpa-demo-script` |
 | Release article | `lpa-release-article` |
 | Monthly innovation roundup | `lpa-monthly-innovation-roundup` |
 | Competitive intelligence tracking (continuous, feeds Attack Matrix / Battle Cards / Positioning Canvas from Phase 2 onward) | `lpa-competitive-intelligence-log` |

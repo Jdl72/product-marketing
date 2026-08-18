@@ -59,4 +59,5 @@ Certification requires:
 Feeds:
 
 - `Stage Gate Architecture` (Lightning Strike gate)
+- `Demo Script` (Tier 1/Tier 2 only, once `Certification Status` is `Certified`)
 - `Release Article` (Tier 1/Tier 2 only, once `Certification Status` is `Certified`)

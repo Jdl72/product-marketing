@@ -120,6 +120,7 @@ Launch is a commercial event.
 
 **Deliverables:**
 - Certification Rubric passed
+- Demo Script written and demo asset cut (Tier 1/Tier 2; Tier 3 folds into the Monthly Innovation Roundup)
 - All assets live
 - All channels coordinated
 
