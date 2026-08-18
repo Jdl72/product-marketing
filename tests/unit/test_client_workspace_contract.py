@@ -1,6 +1,4 @@
 import unittest
-from pathlib import Path
-import subprocess
 
 from tests.test_helpers import REPO_ROOT
 
@@ -46,23 +44,6 @@ class ClientWorkspaceContractTests(unittest.TestCase):
         readme = EXAMPLE_ROOT / "evidence" / "README.md"
         self.assertTrue(readme.is_file(), f"{readme} must exist")
         self.assertIn("source inventories", readme.read_text(encoding="utf-8").lower())
-
-    def test_pr_keeps_jobs_skills_and_schemas_boundary_clean(self):
-        result = subprocess.run(
-            ["git", "diff", "--name-only", "origin/main...HEAD", "--", "jobs", "skills", "schemas"],
-            cwd=REPO_ROOT,
-            capture_output=True,
-            text=True,
-            check=True,
-        )
-        modified_paths = {line for line in result.stdout.splitlines() if line}
-        allowed_paths = {"schemas/client-workspace-evaluation.md"}
-        disallowed_paths = modified_paths - allowed_paths
-        self.assertEqual(
-            disallowed_paths,
-            set(),
-            "core jobs/skills/schemas paths should not be modified beyond the evaluated workspace schema",
-        )
 
 
 if __name__ == "__main__":

@@ -1,6 +1,6 @@
 ---
 name: lpa-demo-script
-description: Draft the Demo Script from the Lindberg launch workbook. Use when a certified release needs the demo video/GIF script that proves the customer outcome live — required before the Release Article, before sales enablement, and before Stage Gate's Distribution Test and Lightning Strike gates.
+description: Draft the Demo Script from the Lindberg launch workbook. Use when a certified release needs the demo video/GIF script that proves the customer outcome live — required before the Release Article, before sales enablement, and before Stage Gate's Lightning Strike gate.
 ---
 
 # Demo Script
@@ -75,4 +75,4 @@ Feeds:
 
 - `Release Article` (full cut embeds in `How It Works`)
 - `Battle Cards` (live sales demo path)
-- `Stage Gate Architecture` (Distribution Test and Lightning Strike asset checklist)
+- `Stage Gate Architecture` (Lightning Strike asset checklist)
