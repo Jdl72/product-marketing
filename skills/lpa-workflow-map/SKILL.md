@@ -61,8 +61,9 @@ Use this tab to govern order of operations across the full launch process.
 
 ### Phase 6: Publish
 
-- `6.1 Release Article`
-- `6.2 Monthly Innovation Roundup`
+- `6.1 Demo Script`
+- `6.2 Release Article`
+- `6.3 Monthly Innovation Roundup`
 
 ## Cross-cutting artifacts
 

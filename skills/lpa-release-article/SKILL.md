@@ -5,7 +5,7 @@ description: Draft the external Release Article from the Lindberg launch workboo
 
 # Release Article
 
-Portable markdown module for workbook artifact `6.1 Release Article`.
+Portable markdown module for workbook artifact `6.2 Release Article`.
 
 ## Purpose
 
@@ -43,6 +43,7 @@ Market the customer outcome, not the feature. If the draft can be summarized as 
 - `PR-FAQ Template`
 - `Positioning Canvas`
 - `Certification Rubric` (status must be `Certified`)
+- `Demo Script`
 - `Battle Cards`
 - `Customer Interview`
 - `Segment Playbooks`
@@ -56,6 +57,7 @@ Market the customer outcome, not the feature. If the draft can be summarized as 
 5. Attach one proof point to every claim, citing the source artifact (`Customer Interview`, `Eval Framework`, `Impact Protocol`).
 6. Check `Segment Playbooks` for more than one relevant audience; if found, note which segment-specific variants are needed rather than writing them inline.
 7. Flag any claim that cannot be traced to an upstream artifact as unresolved — do not publish it.
+8. Embed the full cut of the `Demo Script` in `How It Works` rather than describing the product in prose alone.
 
 ## Output
 

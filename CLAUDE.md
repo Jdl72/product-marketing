@@ -58,6 +58,7 @@ Full phase-by-phase sequence, inputs, and handoffs live in `lpa-workflow-map` â€
 | Go/no-go stage gate review | `lpa-stage-gate-architecture` |
 | Impact protocol | `lpa-impact-protocol` |
 | Certification status before release assets ship | `lpa-certification-rubric` |
+| Demo script for a certified release | `lpa-demo-script` |
 | Release article | `lpa-release-article` |
 | Monthly innovation roundup | `lpa-monthly-innovation-roundup` |
 | Competitive intelligence tracking (continuous, feeds Attack Matrix / Battle Cards / Positioning Canvas from Phase 2 onward) | `lpa-competitive-intelligence-log` |

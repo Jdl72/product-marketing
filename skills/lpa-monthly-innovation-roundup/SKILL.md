@@ -5,7 +5,7 @@ description: Assemble the Monthly Innovation Roundup from the Lindberg launch wo
 
 # Monthly Innovation Roundup
 
-Portable markdown module for workbook artifact `6.2 Monthly Innovation Roundup`.
+Portable markdown module for workbook artifact `6.3 Monthly Innovation Roundup`.
 
 ## Purpose
 

@@ -2,3 +2,4 @@ examples/conversations/raw-fireflies-*.json
 *.pyc
 __pycache__/
 .DS_Store
+.claude/
