@@ -23,7 +23,7 @@ Use this tab to govern order of operations across the full launch process.
 - Work left to right through the six phases.
 - Complete tabs in numbered order within each phase.
 - Do not skip ahead because a later narrative artifact feels more urgent.
-- Stop if required inputs are missing and name the missing prerequisite explicitly.
+- Stop if required inputs are missing and name the missing prerequisite explicitly. The two dependencies that run against tab order are the only exceptions, and both are resolved under Data fidelity rules rather than by skipping the input.
 - Carry chain data exactly; a paraphrase is a new claim and needs its own source.
 - When a finding changes an upstream tab, update that tab before continuing downstream.
 
@@ -159,7 +159,9 @@ These apply across every chain above.
 - **Exact data.** Move values as the producing tab wrote them. Rounding, restating, and re-deriving all count as new claims and need their own source.
 - **Update upstream first.** When a downstream tab produces a finding that changes an upstream artifact, write the upstream change before continuing. The upstream tab stays the source of truth; the downstream tab is never the record.
 - **Mark degraded input.** If an input is paraphrased, stale, or assumed, label it at the point of use rather than passing it on clean. An unlabeled input is treated as verified by every tab after it.
-- **Two tabs that feed each other are still ordered.** `Bar Test` (4.1) and `Segment Playbooks` (4.2) each feed the other, as do `ROI Calculator` (4.4) and `Impact Protocol` (5.2). Complete them in tab order first, then run the return leg as a revision of the earlier tab. Do not hold the earlier tab open waiting for the later one.
+- **Two dependencies run against tab order.** These are the only two, they are shaped differently, and each resolves differently. Neither is a licence to start a tab whose inputs are missing.
+  - `Bar Test` (4.1) requires `Segment Playbooks` (4.2). The dependency is one-directional — `Segment Playbooks` does not require `Bar Test` — so only the tab numbers are inverted relative to the data flow. Complete `Segment Playbooks` first and run `Bar Test` against it. This is the one place where numbered order yields to a declared input.
+  - `ROI Calculator` (4.4) and `Impact Protocol` (5.2) each require the other. No ordering resolves that, so it resolves in two passes: build `ROI Calculator` from `Customer Interview` and `Eval Framework`, record the `Impact Protocol` input as pending under `Degraded Inputs Flagged`, then revise once `Impact Protocol` exists. Until that revision is done the `ROI Calculator` is provisional, and no downstream tab may cite its figures as final.
 - **Launch Tier routes, it does not degrade.** `START HERE` (1.1) sets the tier and `Launch Triage Matrix` (1.3) confirms it. Tier 3 skips `Demo Script` and `Release Article` and rolls into the `Monthly Innovation Roundup`. A skipped tab is a routing decision, not a missing input — do not treat it as a blocked prerequisite.
 
 ## Cross-cutting artifacts
