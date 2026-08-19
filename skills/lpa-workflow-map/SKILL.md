@@ -70,7 +70,7 @@ Use this tab to govern order of operations across the full launch process.
 Not a numbered tab — runs continuously alongside the phases above rather than at one point in the sequence.
 
 - `Competitive Intelligence Log` — ongoing from Phase 2 (Evidence) through post-launch. Log signals as encountered; review before every competitive deal and on a fixed monthly cadence. Feeds `Positioning Canvas` (3.1), `Attack Matrix` (3.4), and `Battle Cards` (4.3) — update those tabs within one sprint of a staleness trigger, don't wait for the phase that owns them to come up in sequence.
-- `Campaign Messaging House` — campaign layer, not release layer. Governs a multi-asset campaign theme spanning several releases, so it runs on the campaign's own calendar rather than at a tab position. Consumes `Positioning Canvas` (3.1) when one exists and hands off to `Bar Test` (4.1) and `Certification Rubric` (5.3) for the same quality gates a release narrative passes. Runs standalone when no launch workbook exists for the products in scope.
+- `Campaign Messaging House` — campaign layer, not release layer. Runs on the campaign calendar in Draft or Release Ready mode. Normalizes workbook artifacts or user-supplied sources into a portable Campaign Evidence Pack, so standalone means no workbook dependency rather than no evidence requirement. Release Ready houses use the campaign paths in `Bar Test` (4.1) and `Certification Rubric` (5.3); Draft houses stop before external derivatives and return proof gaps.
 
 ## Instructions
 

@@ -78,14 +78,14 @@ Worked examples live in [examples/](examples/README.md) — parsed conversations
 
 | Directory | Holds | Notes |
 |---|---|---|
-| `skills/` | 22 skills, one `SKILL.md` each | 20 numbered workbook tabs, plus `lpa-workflow-map` and the continuous `lpa-competitive-intelligence-log` |
+| `skills/` | 23 skills, one `SKILL.md` each | 20 numbered workbook tabs, plus `lpa-workflow-map`, the continuous `lpa-competitive-intelligence-log`, and the cross-cutting `lpa-campaign-messaging-house` |
 | `jobs/` | 3 discovery job specs | Job = trigger, inputs, method, artifacts, review gates, evals |
 | `schemas/` | Output contracts | Artifacts passed between stages must conform; some are roadmap scaffolding (see below) |
 | `evals/` | Quality rubrics | Human-readable scoring before automation |
 | `examples/` | Calibration outputs | What "done" looks like |
 | `docs/architecture/` | System design and roadmap | Intent and direction, not executable method |
 | `connectors/`, `scripts/` | Fireflies integration and CLI utilities | The only executable code |
-| `tests/` | 256 tests | Includes the skill-graph consistency check |
+| `tests/` | 262 tests | Includes skill-graph consistency and Campaign Messaging House artifact validation |
 
 **Core stays client-agnostic.** Skills, jobs, schemas, and evals define how the work gets done. Client-specific taxonomies — segments, competitors, funnel stages, strategic questions — live in a separate client workspace, never in core. See [core vs client workspaces](docs/architecture/core-vs-client-workspaces.md).
 

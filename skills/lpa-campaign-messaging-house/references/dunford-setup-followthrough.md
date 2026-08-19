@@ -2,7 +2,7 @@
 
 Source framework: April Dunford, *Sales Pitch*. This is the narrative spine for `SECTION 2` of the Campaign Messaging House.
 
-Do not reorder these steps. Do not merge steps 1-3 with steps 4-7. The split is the framework.
+Do not reorder or merge these eight components. Steps 1–3 are the Setup; steps 4–8 are the Follow-Through.
 
 ---
 
@@ -99,23 +99,35 @@ Only now does the product appear.
 - One proof point per step 5 entry, minimum.
 - Name the source. Unattributed numbers do not count as proof.
 - Prefer customer-reported outcomes over internal benchmarks.
-- Mark anything you cannot source. It becomes a `Provisional` or `Unsupported` claim in the ledger.
+- Mark anything you cannot source. It becomes `Provisional` when an evidence owner and verification plan exist, or `Unsupported` when no viable evidence path exists. Neither status may appear in external derivatives.
 
 **Fails when.** Proof is a logo wall with no outcome attached. Numbers appear with no source or date. The proof supports a different claim than the one it is attached to.
 
 ---
 
-### Step 7 — Objections & The Ask
+### Step 7 — Objections
 
-**Definition.** The silent objections addressed before they are raised, then one specific low-friction call to action.
+**Definition.** Address the silent objections before they are raised.
 
 **Rules.**
 - Name three objections minimum. Cover at least one of: implementation effort, switching or migration cost, pricing, internal buy-in.
 - Answer each with evidence or a mechanism, not reassurance.
-- One ask. Not a menu.
-- The ask must match the campaign's funnel stage from the GACCS brief. A cold-audience campaign asking for a demo is a mismatch.
 
-**Fails when.** Objections are the easy ones you enjoy answering. The ask is "learn more." There are three CTAs competing.
+**Fails when.** Objections are the easy ones you enjoy answering, responses rely on reassurance, or the difficult adoption risk is omitted.
+
+---
+
+### Step 8 — Ask
+
+**Definition.** Give the buyer one specific, low-friction next step.
+
+**Rules.**
+- Use one ask, not a menu.
+- Match the ask to the audience stage and the GACCS goal.
+- State the action and what the buyer receives next.
+- Use a concrete next step; `learn more` is not an ask.
+
+**Fails when.** A cold audience is pushed directly to a high-friction sales commitment, several CTAs compete, or the next step is vague.
 
 ---
 
@@ -123,8 +135,9 @@ Only now does the product appear.
 
 Run before building pillars:
 
-1. Does any step 1-3 content name the product? If yes, move it to 4-7.
+1. Does any step 1-3 content name the product? If yes, move it to 4-8.
 2. Does every `Perfect World` criterion have a step 5 entry? Unanswered criteria mean the Setup promises what the product does not deliver.
 3. Does every step 5 entry answer a criterion? Orphans mean you are selling something the buyer never agreed to want — add the criterion to step 3 or cut the entry.
 4. Does every step 5 entry have step 6 proof? Unproven entries carry into the ledger as `Provisional`, never as headline claims.
-5. Is the step 7 ask consistent with the GACCS goal metric?
+5. Do step 7 responses use evidence or a documented mechanism?
+6. Is the step 8 ask consistent with the GACCS goal and audience stage?

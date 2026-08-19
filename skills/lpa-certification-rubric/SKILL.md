@@ -19,6 +19,13 @@ Apply the final messaging quality gate before `Lightning Strike`.
 - Evidence must reference the upstream tabs named in the workbook.
 - Treat this as the final quality gate before external use.
 
+## Operating paths
+
+- **Release path:** score the existing release inputs listed below.
+- **Campaign path:** require a `Campaign Messaging House` with `Artifact Status: Release Ready` plus a passing campaign `Bar Test`. Score the house and its derivatives without requiring release-only artifacts.
+
+Choose one path before checking inputs. In campaign mode, fail `Proof / Evidence` if any derivative cites a non-`Proven` claim or if a Proven claim lacks a source, source date, or verifier. Fail `Consistency` when derivative phrasing departs from the cited ledger claim.
+
 ## Scored dimensions
 
 - `Clarity`
@@ -44,6 +51,7 @@ Certification requires:
 - `Customer Interview`
 - `Eval Framework`
 - `Impact Protocol`
+- `Campaign Messaging House` (campaign path only; replaces release-only inputs except `Bar Test`)
 
 ## Output
 
@@ -52,6 +60,8 @@ Certification requires:
 - `Average Score`
 - `Dimensions Below 3`
 - `Certification Status`
+- `Certified Path` (`Release` / `Campaign`)
+- `Campaign Claim IDs Reviewed` (campaign path)
 - `Next Required Artifact`
 
 ## Handoff

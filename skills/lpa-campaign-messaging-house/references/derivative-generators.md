@@ -2,7 +2,7 @@
 
 Structures for `SECTION 4` of the Campaign Messaging House. Each converts the spine (Section 2) and the claim ledger (Section 3) into an asset shape.
 
-**Binding rule for all three generators:** derivatives carry no new claims. Every line cites the claim IDs it draws on, in the form `[CLM-P2.1]`. A line that cites nothing is either unsupported or unnecessary.
+**Binding rule for all three generators:** derivatives carry no new claims. Every line cites one or more `Proven` claim IDs in the form `[CLM-P2.1]`. `Provisional` and `Unsupported` claims are internal-only and must not appear here.
 
 Apply the language constraints from `SKILL.md` to every drafted line. They are not optional here — this is where the copy gets written.
 
@@ -18,14 +18,14 @@ Source: Roy Furr. Use for landing pages, cold email, paid social, and any asset 
 | **A — Agitate** | The deeper cost of leaving it unsolved: what compounds, what gets missed, what it costs internally | Step 2 cons; step 1 |
 | **I — Invalidate** | Why the common alternatives fail — mechanism, not dismissal | Step 2 alternatives; `Attack Matrix` |
 | **S — Solve** | The product as the resolution, tied to the pillars | Steps 4-6; pillar claims |
-| **A — Ask** | One specific productized offer and CTA | Step 7 ask |
+| **A — Ask** | One specific productized offer and CTA | Step 8 ask |
 
 **Rules.**
 - One sequence per campaign, not one per channel. Channels get length cuts of the same sequence.
 - Agitate names consequences the buyer has felt. Invented stakes read as manipulation and kill trust.
 - Invalidate attacks the *approach*, using a generic category label externally — never a named competitor.
 - Solve cites at least one `Proven` claim. A PAISA built only on `Provisional` claims does not ship.
-- The Ask matches step 7 exactly. Do not soften or multiply it here.
+- The Ask matches step 8 exactly. Do not soften or multiply it here.
 
 **Length target.** Problem 1-2 sentences, Agitate 2-3, Invalidate 2-3, Solve 3-4, Ask 1-2.
 
@@ -74,7 +74,7 @@ Generate **two candidates per hook type — 12 total** — then narrow to 3 reco
 | 6 | **How To with a Twist** | Benefit format qualified by a hard condition ("even if X") | The condition must be a real constraint the ICP has |
 
 **Rules.**
-- Every hook cites the claim ID it rests on. A hook citing an `Unsupported` claim is discarded, not softened.
+- Every hook cites the `Proven` claim ID it rests on. A hook citing a `Provisional` or `Unsupported` claim is discarded, not softened.
 - No adverbs. No hype vocabulary. No named competitors.
 - Hook 5 is where the efficiency-multiplier habit resurfaces. Reject any candidate whose number is a time saving or a speed multiple, and replace it with a capability or outcome number.
 - Narrow to 3 by pillar coverage, not by preference: the recommended set should cover at least two different pillars.
@@ -89,4 +89,4 @@ Run after generating all three:
 1. List every claim ID in the ledger. Mark which appear in at least one derivative.
 2. Uncited claims: cut the claim, or cut the pillar if none of its claims survive.
 3. Derivative lines citing no claim: remove them or trace them to a claim.
-4. Confirm no `Unsupported` claim appears anywhere in Section 4.
+4. Confirm no `Provisional` or `Unsupported` claim appears anywhere in Section 4.
