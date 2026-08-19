@@ -22,11 +22,19 @@ If someone cannot explain the message to a friend at a bar, it is not ready.
 - Use tester verbatim feedback, not post-rationalized summaries.
 - Re-test failing messages until pass rate reaches at least 80%.
 
+## Operating paths
+
+- **Release path:** test the `Elevator Pitch`, `Positioning Canvas`, and segment variants as currently defined.
+- **Campaign path:** use a `Campaign Messaging House` with `Artifact Status: Release Ready`. Test the three recommended hooks and every pillar's approved phrasing verbatim. Do not require release-only inputs for this path.
+
+Choose one path before checking inputs. A Draft Campaign Messaging House is not eligible for Bar Test because its derivatives are withheld.
+
 ## Inputs
 
 - `Elevator Pitch`
 - `Positioning Canvas`
 - `Segment Playbooks`
+- `Campaign Messaging House` (campaign path only; replaces the three release-path inputs)
 
 ## Output
 
@@ -34,6 +42,8 @@ If someone cannot explain the message to a friend at a bar, it is not ready.
 - `Tester Verbatim`
 - `Suggested Rewordings`
 - `Clarity Risks`
+- `Tested Path` (`Release` / `Campaign`)
+- `Tested Claim IDs` (campaign path)
 - `Next Required Artifact`
 
 ## Best practices
@@ -41,10 +51,12 @@ If someone cannot explain the message to a friend at a bar, it is not ready.
 - Test pitch versions verbatim before paraphrasing them.
 - Test differentiators and value props separately.
 - Use the same personas interviewed earlier as testers when possible.
+- In campaign mode, revise the claim ledger first when tested phrasing fails, then regenerate every derivative that cites the changed claim ID.
 
 ## Handoff
 
 Feeds:
 
 - `Elevator Pitch`
+- `Campaign Messaging House` (campaign path; revise failed claims and regenerate derivatives)
 - `Certification Rubric`
