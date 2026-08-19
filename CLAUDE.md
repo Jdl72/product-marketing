@@ -53,6 +53,7 @@ Full phase-by-phase sequence, inputs, and handoffs live in `lpa-workflow-map` â€
 | Attack matrix / offense planning | `lpa-attack-matrix` |
 | Testing message clarity | `lpa-bar-test` |
 | Segment-specific messaging | `lpa-segment-playbooks` |
+| Campaign-level master messaging doc (multi-asset campaign, not a single release) | `lpa-campaign-messaging-house` |
 | Battle cards | `lpa-battle-cards` |
 | ROI assets | `lpa-roi-calculator` |
 | Go/no-go stage gate review | `lpa-stage-gate-architecture` |
