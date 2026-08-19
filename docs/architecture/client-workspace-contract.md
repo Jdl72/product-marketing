@@ -16,6 +16,7 @@ client-workspace/
   syntheses/
   briefs/
   decisions/
+  campaigns/      # recommended, not required
 ```
 
 ## Required folders
@@ -81,6 +82,20 @@ Examples:
 - sales narrative docs
 - positioning outputs
 
+### `campaigns/`
+
+Recommended, not required. Holds Campaign Messaging Houses produced by `lpa-campaign-messaging-house`, one directory per campaign theme.
+
+A messaging house does not belong in `briefs/`. Briefs are client-ready outputs, read once and superseded. A messaging house is a versioned governing document that outlives the assets built from it, and every campaign asset cites the claim IDs it draws on. Storing it beside one-off briefs loses the version history that stops messaging from drifting.
+
+Each campaign directory should hold:
+
+- the house artifact itself, at its current version
+- the Campaign Evidence Pack that grounded it
+- superseded versions, kept rather than overwritten — the change log in Section 5 references them
+
+Client workspaces that run no multi-asset campaigns can omit this folder. `scripts/evaluate_client_workspace.py` does not check for it.
+
 ### `decisions/`
 
 Holds insight-to-action artifacts.
@@ -124,6 +139,7 @@ A valid client workspace:
 5. Create syntheses in `syntheses/`.
 6. Publish client-facing outputs in `briefs/`.
 7. Track owners and next steps in `decisions/`.
+8. For a multi-asset campaign, build the messaging house in `campaigns/` before any campaign asset gets written.
 
 ## Related docs
 

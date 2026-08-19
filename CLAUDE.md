@@ -11,6 +11,8 @@ This repo runs two distinct workflows. Know which one you're in before picking a
 1. **Discovery workflow** (`jobs/`) — turns raw customer conversations into evidence. Runs ahead of and alongside the PMM workflow, not inside it.
 2. **PMM asset workflow** (`skills/lpa-*`) — the 20-tab launch workbook, sequenced by `lpa-workflow-map`. Turns evidence into positioning, launch, and GTM artifacts.
 
+Two skills sit outside both: `lpa-competitive-intelligence-log` and `lpa-campaign-messaging-house`. See "Cross-cutting skills" below.
+
 They connect at two points, both optional accelerants — the PMM workflow never blocks on discovery being run first:
 
 - `Conversation Synthesis` (discovery output) is an optional input to `lpa-customer-interview` and `lpa-weekly-discovery-log` — use it to brief live interviews and enrich the weekly log with call-mined patterns, cited by `convrec-ID` alongside interview IDs.
@@ -53,7 +55,6 @@ Full phase-by-phase sequence, inputs, and handoffs live in `lpa-workflow-map` �
 | Attack matrix / offense planning | `lpa-attack-matrix` |
 | Testing message clarity | `lpa-bar-test` |
 | Segment-specific messaging | `lpa-segment-playbooks` |
-| Campaign-level master messaging doc (multi-asset campaign, not a single release) | `lpa-campaign-messaging-house` |
 | Battle cards | `lpa-battle-cards` |
 | ROI assets | `lpa-roi-calculator` |
 | Go/no-go stage gate review | `lpa-stage-gate-architecture` |
@@ -62,7 +63,21 @@ Full phase-by-phase sequence, inputs, and handoffs live in `lpa-workflow-map` �
 | Demo script for a certified release | `lpa-demo-script` |
 | Release article | `lpa-release-article` |
 | Monthly innovation roundup | `lpa-monthly-innovation-roundup` |
+
+## Cross-cutting skills
+
+Neither of these is a numbered tab. Do not look for them in the phase sequence, and do not block them on a phase completing.
+
+| Work | Skill to use |
+|---|---|
 | Competitive intelligence tracking (continuous, feeds Attack Matrix / Battle Cards / Positioning Canvas from Phase 2 onward) | `lpa-competitive-intelligence-log` |
+| Master messaging doc for a multi-asset campaign theme spanning several releases | `lpa-campaign-messaging-house` |
+
+`lpa-campaign-messaging-house` governs the campaign layer, not the release layer. Use it when the unit of work is a campaign theme rather than one release — the launch workbook has no tab for that. Three rules govern its use:
+
+- **It runs standalone.** Repository artifacts populate its Campaign Evidence Pack when they exist; user-supplied sources populate the same fields when they do not. Standalone means independent of repo artifacts, never independent of evidence.
+- **Mode is not a preference.** `Draft` withholds Section 4 derivatives and marks claims internal-only. `Release Ready` requires validated positioning, approved product facts, and one `Proven` claim per retained pillar. A request for finished copy does not promote a Draft.
+- **It hands off to the same quality gates a release narrative passes** — `Bar Test` and `Certification Rubric`, both in campaign mode. When those are unavailable, run the bundled standalone protocol instead of claiming they ran.
 
 ## Schema contracts
 
