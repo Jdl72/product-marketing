@@ -19,6 +19,8 @@ Use examples to:
   Persona outputs grounded in real evidence
 - `positioning/`
   Positioning outputs grounded in conversation synthesis
+- `campaigns/`
+  Campaign Messaging House outputs, each paired with the Campaign Evidence Pack that grounded it
 
 ## Current starting point
 
@@ -35,3 +37,5 @@ Current concrete examples:
 - [Conversation synthesis input pack guide](conversations/conversation-synthesis-input-pack.md)
 - [Generated conversation synthesis input pack](conversations/conversation-synthesis-input-pack.generated.md)
 - [Conversation synthesis example](conversations/conversation-synthesis-example.md)
+
+No worked Campaign Messaging House example exists yet. Until one does, the closest calibration is the output template at [skills/lpa-campaign-messaging-house/assets/campaign-messaging-house-template.md](../skills/lpa-campaign-messaging-house/assets/campaign-messaging-house-template.md), which shows the required structure but not what a filled, well-argued house reads like.

@@ -13,6 +13,8 @@ The repo runs two workflows. Knowing which one you're in tells you which files m
 
 They meet at two optional points. The PMM workflow never blocks on discovery having run — discovery makes it faster and better-grounded when it exists.
 
+Two skills sit outside both workflows and run on their own cadence: `lpa-competitive-intelligence-log` and `lpa-campaign-messaging-house`.
+
 ```mermaid
 flowchart TB
     subgraph DISC["Discovery workflow — jobs/"]
@@ -39,11 +41,15 @@ flowchart TB
     end
 
     CIL["Competitive Intelligence Log<br/>continuous from Phase 2 onward"]
+    CMH["Campaign Messaging House<br/>campaign layer — one theme, many releases"]
 
     CS -. optional .-> E
     PB -. optional .-> N
     CIL -.-> N
     CIL -.-> V
+    N -. optional .-> CMH
+    CMH -.-> V
+    CMH -.-> L
 ```
 
 Three things that diagram is telling you:
@@ -51,6 +57,7 @@ Three things that diagram is telling you:
 - **The dotted edges are the only connections between the two workflows.** `Conversation Synthesis` briefs live interviews and enriches the weekly log; `Positioning Brief` gives Positioning Canvas a first draft to stress-test. Neither replaces the workbook's own evidence work.
 - **The solid chain inside the workbook is enforced order.** `lpa-workflow-map` is the authority: complete tabs in numbered order, and stop when a required input is missing rather than working around it.
 - **Competitive Intelligence Log sits outside the sequence.** It runs continuously and pushes updates into Narrative and Validate whenever a signal lands, instead of waiting its turn.
+- **Campaign Messaging House sits above it.** The workbook governs one release against one competitive set. A campaign theme spans several releases and many assets, so the house runs on the campaign's calendar and borrows the workbook's quality gates — `Bar Test` and `Certification Rubric`, both in campaign mode. It consumes a `Positioning Canvas` when one exists and runs standalone when none does.
 
 ## Start here
 
@@ -66,6 +73,7 @@ Then branch by what you're doing:
 |---|---|
 | Mining customer calls for evidence | [Discovery system flow](docs/architecture/discovery-system-flow.md), then [jobs/README.md](jobs/README.md). [Term dictionary](docs/architecture/discovery-term-dictionary.md) for vocabulary, [parse runbook](docs/architecture/parse-single-conversation-runbook.md) for the step-by-step |
 | Running a launch end to end | Any skill in `skills/`, starting with [lpa-start-here](skills/lpa-start-here/SKILL.md) |
+| Building messaging for a multi-asset campaign, not a single release | [lpa-campaign-messaging-house](skills/lpa-campaign-messaging-house/SKILL.md), then its [evidence pack](skills/lpa-campaign-messaging-house/references/campaign-evidence-pack.md) and [output template](skills/lpa-campaign-messaging-house/assets/campaign-messaging-house-template.md) |
 | Setting up work for a specific client | [Core vs client workspaces](docs/architecture/core-vs-client-workspaces.md), the [client workspace contract](docs/architecture/client-workspace-contract.md), and the [example workspace](examples/client-workspace/README.md) |
 | Wiring up Fireflies | [Fireflies native skill mapping](docs/architecture/fireflies-native-skill-mapping.md), [config-aware runbook](docs/architecture/config-aware-customer-conversation-runbook.md) |
 | Judging whether an output is good | [evals/README.md](evals/README.md) and the matching rubric |
@@ -104,7 +112,7 @@ Three conventions make the skills compose. Break one and the system stops being 
 ## Running things
 
 ```bash
-python3 -m pytest tests/ -q                              # full suite, 256 tests
+python3 -m pytest tests/ -q                              # full suite, 262 tests
 python3 scripts/fetch_fireflies_transcripts.py --limit 5 # pull transcripts
 python3 scripts/build_conversation_synthesis_input.py records/*.md
 python3 scripts/validate_conversation_synthesis.py path/to/synthesis.md
@@ -112,3 +120,9 @@ python3 scripts/evaluate_client_workspace.py path/to/workspace
 ```
 
 `validate_conversation_synthesis.py` checks that every pattern claim cites a supporting record ID. Run it before treating a synthesis as ready for downstream use.
+
+```bash
+python3 skills/lpa-campaign-messaging-house/scripts/validate_campaign_messaging_house.py path/to/house.md
+```
+
+`validate_campaign_messaging_house.py` checks a Campaign Messaging House against its own contract — section completeness, claim-status rules, and the bar on `Provisional` or `Unsupported` claims reaching Section 4 derivatives. Run it before returning a `Release Ready` artifact.

@@ -119,6 +119,8 @@ PMM asset-workflow skills that consume discovery output (`skills/lpa-*`, live in
 - `Weekly Discovery Log` — optionally enriched by `Conversation Synthesis`
 - `Positioning Canvas` — optionally accelerated by `Positioning Brief`
 
+`Campaign Messaging House` consumes discovery output only second-hand, through the `Positioning Canvas` and `Customer Interview` entries in its Campaign Evidence Pack. No discovery job feeds it directly, and wiring one is not currently planned — its evidence pack accepts user-supplied sources, so a campaign can be grounded without the discovery workflow having run.
+
 ### Agents
 
 Agents should execute and orchestrate.

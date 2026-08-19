@@ -83,16 +83,20 @@ Primary outputs:
 
 Jobs to be done:
 
+- govern messaging for a campaign theme that spans several releases
 - support outbound marketing with market/product insights
 - maintain a content calendar
 - generate recurring content assets
 
 Primary outputs:
 
+- campaign messaging house — **built** (`skills/lpa-campaign-messaging-house`)
 - outbound insight brief
 - content calendar
 - newsletter draft
 - press release draft
+
+The campaign messaging house is the first output in this domain with an implementing skill. It matters to the architecture for a reason beyond the artifact itself: it is the first place the system governs work at the campaign layer rather than the release layer, and the first to carry a claim ledger — every claim with an ID, a proof source, and a status, where `Provisional` and `Unsupported` claims are barred from external derivatives. That ledger is the traceability principle below, enforced mechanically rather than by review.
 
 ## System layers
 

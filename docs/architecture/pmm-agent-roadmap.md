@@ -8,6 +8,7 @@ The repo has already completed the early setup work that this roadmap originally
 - the conversation workflow has an end-to-end example and automated tests
 - GitHub epic and child-issue structure is in place
 - multi-client hardening docs and example workspace scaffolding now exist
+- the first M5 campaign-operations artifact shipped ahead of sequence: `lpa-campaign-messaging-house`, with a deterministic validator and its own test module
 
 That means the roadmap should no longer treat issue setup and first examples as the immediate next work. The next practical gap is widening evaluation coverage across the major schema-backed outputs so the repo has a more complete quality layer.
 
@@ -92,6 +93,7 @@ Extend the system from strategy into recurring execution support.
 
 Scope:
 
+- campaign-level messaging governance — **shipped early** (`lpa-campaign-messaging-house`)
 - sales asset generation
 - content calendar support
 - newsletter and press release drafting
@@ -100,6 +102,8 @@ Scope:
 Definition of done:
 
 - the system supports both launch-time and ongoing PMM work
+
+The messaging house jumped ahead of M2-M4 because it needed no orchestrator and no retrieval layer — it runs standalone against a user-supplied evidence pack. Treat that as the pattern for the rest of M5: the pieces that do not depend on state handoff can ship before the orchestrator exists.
 
 ## Epic map
 
@@ -144,9 +148,12 @@ Child work:
 
 Child work:
 
+- campaign messaging house — done
 - outbound insight support
 - content calendar
 - recurring content asset generation
+
+Open follow-on work for the messaging house: no eval rubric in `evals/`, and no worked example in `examples/`. Both gaps are listed under the next implementation sequence below.
 
 ## Recommended next implementation sequence
 
@@ -166,3 +173,4 @@ After that:
 6. Expand workflow input/output contracts across the schema-backed artifacts
 7. Add config validation and fallback behavior for client workspaces
 8. Extend evidence-layer retrieval beyond the current conversation workflow
+9. Add a campaign messaging house eval rubric and one worked example — the skill ships with a deterministic validator, which checks structure and claim-status rules but not whether the narrative argument holds
